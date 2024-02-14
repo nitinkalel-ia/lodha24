@@ -1,0 +1,122 @@
+footer {
+    background: #FFFBEC;
+    padding-top: 40px;
+}
+
+footer .mainFooterMenu {
+    padding-bottom: 30px;
+    border-bottom: 0.3px solid rgba(109, 110, 112, 0.5);
+    position: relative;
+}
+
+footer .mainFooterMenu .downArrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    background: #fffbec;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+footer .mainFooterMenu .downArrow.active {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotateX(180deg);
+}
+
+footer .mainFooterMenu .footerLinksWrapper .footerLinksDiv {
+    width: 250px;
+}
+
+footer .mainFooterMenu .footerLinksWrapper .footerLinksDiv ul li {
+    margin-top: 10px;
+}
+
+footer .mainFooterMenu .footerLinksWrapper .footerLinksDiv ul li:first-child {
+    margin-top: 0;
+}
+
+footer .mainFooterMenu .footerLinksWrapper .footerLinksDiv ul li a {
+    color: #6D6E70;
+    font-family: "Futura Bk BT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+footer .mainFooterMenu .footerAddressDiv {
+    width: 300px;
+}
+
+footer .mainFooterMenu .footerAddressDiv p {
+    color: #6D6E70;
+    font-family: "Futura Bk BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
+footer .mainFooterMenu .footerAddressDiv p a {
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+footer .mainFooterMenu .footerAddressDiv ul {
+    gap: 8px;
+    margin-top: 20px;
+}
+
+footer .hiddenLinks {
+    padding-top: 40px;
+    display: none;
+    overflow: hidden;
+}
+
+footer .hiddenLinks h5 {
+    color: #313131;
+    font-family: 'Cormorant Garamond Light';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+footer .hiddenLinks ul {
+    gap: 5px;
+    margin-top: 15px;
+    column-count: 5;
+}
+
+footer .hiddenLinks ul li a {
+    color: #6D6E70;
+    font-family: "Futura Bk BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+footer .hiddenLinks .footerBottomLinks {
+    gap: 10px;
+    margin-top: 40px;
+}
+
+footer .hiddenLinks .footerBottomLinks ul {
+    column-count: unset;
+}
+
+footer .copyDiv p {
+    padding: 30px 0;
+    color: #000;
+    text-align: center;
+    font-family: "Futura Bk BT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}

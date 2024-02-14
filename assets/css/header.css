@@ -1,0 +1,440 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(31, 25, 20, 0.50);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-height: 60px;
+    z-index: 9;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+header.nav-up {
+    transform: translateY(-60px);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+header .mainHeader {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+header .mainHeader .brandLogo {
+    width: 170px;
+    position: relative;
+    z-index: 1;
+}
+
+header .mainHeader .linksDiv {
+    width: calc(100% - 200px);
+}
+
+header .mainHeader .linksDiv>ul {
+    position: relative;
+    min-height: 60px;
+}
+
+header .mainHeader .linksDiv>ul .activeLine {
+    position: absolute;
+    left: 45px;
+    width: 100%;
+    height: 0;
+    background: #C1C1C1;
+    bottom: 0;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul li.active~.activeLine,
+header .mainHeader .linksDiv>ul:hover li~.activeLine {
+    height: 2px;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul li:nth-child(1).active~.activeLine,
+header .mainHeader .linksDiv>ul li:nth-child(1):hover~.activeLine {
+    width: 75px;
+    transform: translateX(0);
+}
+
+header .mainHeader .linksDiv>ul li:nth-child(2).active~.activeLine,
+header .mainHeader .linksDiv>ul li:nth-child(2):hover~.activeLine {
+    width: 82px;
+    transform: translateX(120px);
+}
+
+header .mainHeader .linksDiv>ul li:nth-child(3).active~.activeLine,
+header .mainHeader .linksDiv>ul li:nth-child(3):hover~.activeLine {
+    width: 123px;
+    transform: translateX(247px);
+}
+
+header .mainHeader .linksDiv>ul>li {
+    padding-left: 45px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header .mainHeader .linksDiv>ul>li>a {
+    color: #FFF;
+    font-family: "Futura Bk BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header .mainHeader .linksDiv>ul>li>a>img {
+    height: 16px;
+    width: 17px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+header .mainHeader .linksDiv .staticlinksUl {
+    margin-left: 150px;
+}
+
+header .mainHeader .linksDiv .staticlinksUl li {
+    padding-left: 30px;
+}
+
+header .mainHeader .linksDiv .staticlinksUl li a {
+    color: #DADADA;
+}
+
+header .mainHeader .linksDiv>ul>li.innerMenu>a {
+    position: relative;
+    padding-right: 25px;
+}
+
+header .mainHeader .linksDiv>ul>li.innerMenu>a:before {
+    content: "";
+    position: absolute;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li.innerMenu.active>a:before {
+    transform: translateY(-50%) rotateX(180deg);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    display: none;
+    overflow: hidden;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: rgba(24, 22, 21, 0.80);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList {
+    width: 100%;
+
+    position: relative;
+    padding: 60px 0;
+    transform: translateY(50px);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .closedMenu {
+    position: absolute;
+    top: 20px;
+    top: -40px;
+    right: 15px;
+    height: 28px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .container {
+    padding: 0 5% 0 calc(5% + 200px);
+    padding-left: 200px;
+    position: relative;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl {
+    width: 250px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv {
+    width: 350px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl h6 {
+    color: #FFF;
+    font-family: "Futura Md BT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li {
+    margin-top: 30px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li:first-child {
+    margin-top: 20px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a {
+    color: #D0D0D0;
+    font-family: "Futura Bk BT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 18px;
+    display: inline-flex;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:before {
+    content: attr(data-location);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #C1A33E;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a.active,
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:hover {
+    color: #C1A33E;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a.active:after,
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:hover:after {
+    width: 100%;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv {
+    position: relative;
+    border-radius: 30px;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv:before {
+    content: "";
+    opacity: 0.2;
+    background: #D9D9D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input {
+    border: 0;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    color: #FFF;
+    font-family: "Futura Lt BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 100%;
+    outline: none;
+    padding-left: 20px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv img {
+    width: 15px;
+    height: 15px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv .searchButtonDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv .searchButtonDiv img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv .searchButtonDiv .closedBtn {
+    opacity: 0;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv h6 {
+    color: #FFF;
+    font-family: "Futura Md BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-top: 25px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
+    color: #FFF;
+    font-family: "Futura Lt BT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.7;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a:hover {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-color: #fff;
+    background: #fff;
+    color: #000;
+    opacity: 1;
+}
+
+.menuOpen header {
+    background: transparent;
+    backdrop-filter: none;
+    transition: none;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3px;
+    background: rgba(193, 193, 193, 0.3);
+    z-index: 2;
+    opacity: 0;
+}
+
+.menuOpen header::before {
+    opacity: 1;
+}
+
+.menuOpen header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList {
+    transform: translateY(0);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0.6s !important;
+    opacity: 1;
+}
+
+header.white,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv:before {
+    background: rgba(255, 255, 255, 0.50);
+}
+
+header.white::before {
+    opacity: 1;
+    background: #A0A0A0;
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input::placeholder {
+    color: #000;
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv h6,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl h6,
+header.white .mainHeader .linksDiv>ul>li>a {
+    color: #000;
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv:before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+header.white .mainHeader .linksDiv img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(304deg) brightness(97%) contrast(103%);
+}
+
+header.white .mainHeader .linksDiv>ul>li.innerMenu>a:before {
+    border-top-color: #000;
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:after,
+header.white .mainHeader .linksDiv>ul .activeLine {
+    background: #000;
+}
+
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a:hover {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}

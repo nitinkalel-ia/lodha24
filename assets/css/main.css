@@ -1,0 +1,612 @@
+.spotlightSliderDiv .swiper-slide {
+    position: relative;
+}
+
+.spotlightSliderDiv .swiper-slide .bannerImgDiv {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background: #FFFBEC;
+}
+
+.spotlightSliderDiv .swiper-slide .bannerImgDiv .bannerImg {
+    width: 100%;
+}
+
+
+.ourPromiseSec {
+    padding: 130px 0;
+}
+
+.ourPromiseSec .ourPromiseImgDiv,
+.ourPromiseSec .ourPromiseTextDiv {
+    width: 50%;
+}
+
+.ourPromiseSec .ourPromiseImgDiv img {
+    width: 100%;
+}
+
+.ourPromiseSec .ourPromiseTextDiv {
+    padding-left: 120px;
+    max-width: 550px;
+}
+
+.ourPurposeSec {
+    min-height: 100vh;
+    background: #FFFBEC;
+    position: relative;
+}
+
+.ourPurposeSec .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.ourPurposeSec .ourPurposeImgDiv {
+    width: 55%;
+    height: 100vh;
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv:hover img {
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv .underlineArrowBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+
+.ourPrideSec {
+    padding: 80px 0 0 0;
+
+}
+
+.ourPrideSliderDiv {
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.ourPrideSliderDiv .swiper-slide {
+    width: 250px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.ourPrideSliderDiv .swiper-slide:first-child {
+    margin-left: 90px;
+}
+
+.ourPrideSliderDiv .swiper-slide:last-child {
+    margin-right: 90px;
+}
+
+.ourPrideSliderDiv .swiper-slide a {
+    display: block;
+}
+
+.ourPrideSliderDiv .swiper-slide img {
+    width: 100%;
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.ourPrideSliderDiv .swiper-slide .ourPrideImgDiv {
+    overflow: hidden;
+}
+
+.ourPrideSliderDiv .swiper-slide:hover img {
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.ourPrideSliderDiv .swiper-slide p {
+    color: var(--Sub-copy, #6D6E70);
+    font-family: "Futura Md BT";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-top: 10px;
+}
+
+.ourPrideSliderDiv .container {
+    margin-top: 40px;
+}
+
+.ourPrideSliderDiv .container .swiperBtnDiv {
+    margin-right: 35px;
+}
+
+.ourPrideSliderDiv .container .swiper-button {
+    position: static;
+    margin: 0 15px;
+}
+
+
+
+
+
+
+
+.ourBrandsSec {
+    padding-bottom: 80px;
+}
+
+.ourBrandsSec .ourBrandsDiv {
+    gap: 100px;
+    margin-top: 45px;
+}
+
+.ourBrandsSec .ourBrandsDiv img {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.ourStorySec {
+    padding: 80px 0;
+}
+
+
+.textImgGrid .textImgDiv {
+    padding-top: 30px;
+}
+
+.evenRow .textImgDiv:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.oddRow .textImgDiv:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.textImgGrid .textImgDiv .imgDiv {
+    width: 45%;
+}
+
+.textImgGrid .textImgDiv .imgDiv img {
+    width: 100%;
+}
+
+.textImgGrid .textImgDiv .textDiv {
+    padding-left: 100px;
+    width: 55%;
+}
+
+.textImgGrid .textImgDiv .textDiv .ourPromiseTextDiv {
+    width: 400px;
+}
+
+.keyFactsSec {
+    padding: 50px 0 30px;
+    background: #F8F8F8;
+
+}
+
+.keyFactsSec .keyContentDiv {
+    margin-top: 25px;
+    padding: 0 100px;
+    position: relative;
+}
+
+.keyFactsSec .keyContentDiv:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1px;
+    height: 100%;
+    background: rgba(157, 127, 25, 0.23);
+}
+
+.keyFactsSec .projectsDiv,
+.keyFactsSec .textDiv {
+    width: 100%;
+}
+
+.keyFactsSec span {
+    color: #9D7F19;
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-right: 25px;
+}
+
+.keyFactsSec p {
+    color: #9D7F19;
+    font-family: "Futura Bk BT";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.keyFactsSec .locationDiv small {
+    color: #9D7F19;
+    text-align: center;
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 0.8rem;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.keyFactsSec .contentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: normal;
+}
+
+.keyFactsSec .locationDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.keyFactsSec .projectsDiv ul li {
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.keyFactsSec .projectsDiv ul li:first-child {
+    margin-top: 0;
+}
+
+.keyFactsSec .projectsDiv ul li span {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.keyFactsSec .projectsDiv ul li p {
+    width: calc(100% - 60px);
+}
+
+.keyFactsSec .saleText {
+    color: #000;
+    font-family: "Futura Bk BT";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    opacity: 0.5;
+    margin-top: 70px;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.whoWeAreSec {
+    padding: 80px 0;
+}
+
+.teamDiv {
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.teamDiv .ContentText {
+    background: #FFFBEC;
+    padding: 35px 60px;
+    text-align: center;
+}
+
+.featuredAwardsSec {
+    padding: 50px 0 100px 0;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv {
+    padding: 0 100px;
+    margin-top: 30px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .imgDiv,
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv {
+    width: 50%;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .imgDiv img {
+    width: 350px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv ul li {
+    margin-top: 20px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv ul li:first-child {
+    margin-top: 0;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv .arrowPlainBtn {
+    margin-top: 35px;
+}
+
+.ourValuesSec {
+    padding: 0 0 80px;
+}
+
+.ourValuesSec .valuesWrapper {
+    margin-top: 30px;
+}
+
+.ourValuesSec .valuesWrapper .linesDiv {
+    width: 53px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex !important;
+    position: absolute;
+    left: 0;
+}
+
+.ourValuesSec .valuesWrapper .linesDiv span {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    background: #d1d1d1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.ourValuesSec .valuesWrapper .linesDiv span.active {
+    background: #6d6e70;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv {
+    /* width: 100%; */
+    padding-left: 100px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv p {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #9D7F19;
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 1rem;
+    line-height: 1.3rem;
+    opacity: 0.4;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv .textDivAnimate {
+    margin-left: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv .textDivAnimate div {
+    opacity: 0;
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+    transform: translateX(100px);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv div.active {
+    width: 180px;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv div.current p {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.deveSec {
+    padding: 60px 0;
+}
+
+.instaSliderDiv {
+    margin-top: 25px;
+}
+
+.instaSliderDiv .swiper-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.instaSliderDiv .swiper-slide {
+    width: calc((100% / 4) - 13px);
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .instaImg {
+    width: 100%;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .copyImg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .playImg {
+    position: absolute;
+    cursor: pointer;
+}
+
+.projctsDiv {
+    padding: 80px 0;
+}
+
+.projctsDiv .projectSearchDiv {
+    padding: 45px 10px 22px 0;
+    border-bottom: 0.3px solid #A0A0A0;
+}
+
+.projctsDiv .projectSearchDiv input {
+    width: 100%;
+    border: 0;
+    color: #313131;
+    font-family: "Futura Lt BT";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    outline: none;
+}
+
+.projctsDiv .projectSearchDiv input::placeholder {
+    color: #6D6E70;
+}
+
+.projctsDiv .projectSearchDiv .searchButtonDiv img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(119%) hue-rotate(182deg) brightness(102%) contrast(88%);
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.projctsDiv .projectSearchDiv .searchButtonDiv .closedBtn {
+    display: none;
+}
+
+.projectFilterDiv {
+    margin-top: 50px;
+}
+
+.projectFilterDiv .listDiv {
+    gap: 40px;
+}
+
+.projectFilterDiv .filterListDiv {
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.filterDataDiv {
+    margin-top: 30px;
+}
+
+.filterDataDiv .filterDataRow {
+    margin-top: 50px;
+}
+
+.filterSliderDiv {
+    width: 100%;
+}
+
+.cardDiv {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+}
+
+.cardDiv:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 57.71%), transparent -271.608px -96px / 357.977% 143.714% no-repeat;
+}
+
+.cardDiv a {
+    position: relative;
+}
+
+.cardDiv img {
+    width: 100%;
+}
+
+.cardDiv h6 {
+    color: #FFF;
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.featuredProjectSec {
+    padding: 50px 0;
+}
+
+.lifeStyleSec {
+    padding: 60px 0;
+}
+
+.lifeStyleSec .textListDiv .ContentText {
+    width: 500px;
+}
+
+.lifeStyleSec .textListDiv .listDiv {
+    width: 300px;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.normalTextImgSlider {
+    padding-bottom: 0;
+}
+
+.normalTextImgSlider .swiper-slide {
+    width: calc((100% / 3) - 16px);
+    margin: 0 8px !important;
+}
+
+.planSec {
+    padding: 80px 0;
+}
