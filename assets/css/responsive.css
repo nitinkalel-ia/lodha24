@@ -58,7 +58,7 @@
 
     .mobMenuOpen header .mainHeader .logoDiv .mobMenu .burgerMenu span:nth-child(1) {
         transform-origin: center;
-        transform: rotate(-45deg) translateY(-50%);
+        transform: rotate(-45deg) translateY(-50%) translateX(0.5px);
         top: 50%;
     }
 
@@ -68,7 +68,7 @@
 
     .mobMenuOpen header .mainHeader .logoDiv .mobMenu .burgerMenu span:nth-child(3) {
         transform-origin: center;
-        transform: rotate(45deg) translateY(-50%);
+        transform: rotate(45deg) translateY(-50%) translateX(-0.5px);
         bottom: auto;
         top: 50%;
     }
@@ -156,6 +156,10 @@
         align-items: center;
         width: 100%;
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    }
+
+    header .mainHeader .linksDiv>ul>li.dNone>a {
+        border: 0;
     }
 
     header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl,
@@ -281,6 +285,45 @@
         margin-top: 0;
     }
 
+    .stickyHeader {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #9D7F19;
+        min-height: 60px;
+        z-index: 999;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .nav-up .stickyHeader {
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+        bottom: -65px;
+    }
+
+    .stickyHeader ul {
+        gap: 30px;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .stickyHeader ul li a {
+        font-family: 'Futura Bk BT';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .stickyHeader ul li a img {
+        margin-right: 10px;
+    }
+
     footer .mainFooterMenu .container .row {
         flex-wrap: wrap;
     }
@@ -321,7 +364,11 @@
     }
 
     footer .hiddenLinks ul li a {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    footer .mainFooterMenu .footerLinksWrapper .footerLinksDiv ul li a {
+        font-size: 12px;
     }
 
     .ourPromiseSec {
@@ -381,7 +428,7 @@
     }
 
     .ourPrideSliderDiv .swiper-slide {
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
     .ourPrideSliderDiv .swiper-slide:first-child {
@@ -390,6 +437,10 @@
 
     .ourPrideSliderDiv .swiper-slide:last-child {
         margin-right: 20px;
+    }
+
+    .ourPrideSliderDiv .container a {
+        margin-top: 10px;
     }
 
 
@@ -462,7 +513,32 @@
         margin: 50px 0 0 0;
         padding: 0 15px;
         text-align: center;
+        width: 100% !important;
     }
+
+    .keyFactsSec span {
+        width: 150px !important;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .keyFactsSec p {
+        width: 150px !important;
+        justify-content: flex-start;
+    }
+
+    .keyFactsSec .locationDiv {
+        text-align: center;
+    }
+
+    .keyFactsSec .locationDiv small {
+        justify-content: center;
+    }
+
+    .keyFactsSec .locationDiv p {
+        width: 100% !important;
+    }
+
 
     .teamDiv {
         flex-wrap: wrap;
@@ -615,6 +691,307 @@
         left: 0px !important;
         transform: none !important;
     }
+
+
+
+    .secodaryNav .container {
+        padding: 0 40px;
+    }
+
+    .secodaryNav .swiper-button {
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+
+    .secodaryNav .swiper-button-prev {
+        left: 10px;
+    }
+
+    .secodaryNav .swiper-button-next {
+        right: 10px;
+    }
+
+    .lifeStyleSec .textListDiv .listDiv {
+        margin-top: 50px;
+    }
+
+    .normalTextImgSlider.noSliderMob .swiper-slide {
+        margin: 0 0 32px 0 !important;
+    }
+
+    .planSec {
+        flex-wrap: wrap;
+        padding: 80px 0;
+
+    }
+
+    .planSec .container {
+        position: static;
+        transform: none;
+    }
+
+    .planSec .tabWrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .planSec .tabWrapper .tabHeading {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    .planSec .tabWrapper .planSlider .swiper-slide {
+        margin: 0 20px;
+        width: 225px;
+    }
+
+    .planSec .tabWrapper .planSlider .swiper-slide:first-child {
+        margin-left: 20px;
+    }
+
+    .planSec .tabWrapper .planSlider .swiper-slide:last-child {
+        margin-right: 20px;
+    }
+
+    .planSec .tabWrapper .planSlider .swiper-slide .planImgDiv {
+        height: 225px;
+    }
+
+    .secodaryNav ul li {
+        margin: 0 15px;
+    }
+
+    .textImgGrid .textImgDiv .textDiv .ContentText .headingH1 {
+        margin-top: 16px;
+    }
+
+
+
+    /* .ourPrideSliderDiv .swiper-slide p {
+        padding: 0 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    } */
+
+    .ourPrideSliderDiv .swiper-slide:last-child p {
+        margin-bottom: 0;
+    }
+
+    .servicesSec .container {
+        padding: 0;
+    }
+
+    .servicesSec .container .row {
+        flex-wrap: wrap;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .servicesSec .ContentText {
+        width: 100%;
+    }
+
+    .servicesSec ul {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .servicesSec ul li {
+        width: calc(100% / 2);
+    }
+
+    .bodDiv.normalTextImgSlider .swiper-wrapper {
+        gap: 16px;
+    }
+
+    .bodSec {
+        padding: 50px 0;
+    }
+
+    .bodDiv.normalTextImgSlider .swiper-slide {
+        width: calc((100% / 2) - 8px);
+        margin-bottom: 20px !important;
+    }
+
+    .bodWrapper .popupContent {
+        width: calc(100% - 40px);
+    }
+
+    .bodWrapper .bodImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .bodWrapper .bodContent {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .bodWrapper .bodContent .descDiv {
+        max-height: 200px;
+    }
+
+    .masterPlanSec {
+        padding: 0px 0 80px 0;
+    }
+
+    .planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:first-child {
+        margin-left: 20px;
+    }
+
+    .planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:last-child {
+        margin-right: 20px;
+    }
+
+    .priceListWrapper ul li p {
+        font-size: 12px;
+    }
+
+    .priceSec .container {
+        padding: 0;
+    }
+
+    .locationMapSec .row {
+        flex-direction: column-reverse;
+    }
+
+    .locationMapSec .ContentText {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .locationMapSec .mapDiv {
+        width: 100%;
+    }
+
+    .amenitiesSec .row {
+        padding: 0;
+    }
+
+    .amenitiesSec .row .col-3 {
+        margin-top: 50px;
+    }
+
+    .gridDiv .setGridDiv.lastTwoBig .gridCol:nth-last-child(2),
+    .gridDiv .setGridDiv.lastTwoBig .gridCol:last-child,
+    .gridDiv .setGridDiv.lastBig .gridCol:last-child,
+    .gridDiv .setGridDiv .gridCol,
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(1),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(6),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(7),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(12) {
+        height: 110px;
+    }
+
+    .gridDiv .setGridDiv .gridCol:nth-child(1),
+    .gridDiv .setGridDiv .gridCol:nth-child(6),
+    .gridDiv .setGridDiv .gridCol:nth-child(7),
+    .gridDiv .setGridDiv .gridCol:nth-child(12),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(3),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(4),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(9),
+    .gridDiv.gridReverse .setGridDiv .gridCol:nth-child(10) {
+        height: 236px;
+    }
+
+    .galleryTab .tabContent .tabData {
+        padding: 25px 0;
+    }
+
+    .imageLightBoxWrapper .container {
+        max-width: 100vw;
+    }
+
+    .imageLightBoxWrapper .popupContent h5 {
+        font-size: 1.5rem;
+    }
+
+    .noGridDiv .gridCol {
+        width: calc((100% / 2) - 8px);
+    }
+
+    .bodredCardGridDiv .bodredCardDiv {
+        padding: 20px 10px;
+    }
+
+    .blogCard .blogContentDiv .date {
+        font-size: 10px;
+    }
+
+    .blogCard .blogContentDiv h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .blogCard .blogContentDiv p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .blogCard .blogImgDiv .blogCat {
+        font-size: 9px;
+    }
+
+    .blogSliderDiv {
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+
+    .contactInfoList li {
+        margin: 0;
+        padding: 24px 0;
+    }
+
+    .contactInfoList li::before {
+        height: 1px;
+        width: 180px;
+        top: 0;
+        transform: none;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .contactInfoList li:first-child:before {
+        opacity: 0;
+    }
+
+    .contactInfoList li:nth-child(4n+4):before {
+        opacity: 1;
+    }
+
+    .getInTouchForm {
+        padding: 60px 40px;
+    }
+
+    .formControls {
+        width: 100%;
+    }
+
+
+
+    .enquirePopupWrapper .getInTouchForm {
+        max-width: 100%;
+        padding: 50px 25px;
+        min-width: 335px;
+    }
+
+    .enquirePopupWrapper .popupContent {
+        width: 335px;
+    }
+
+    .enquirePopupWrapper.active .popupContent .getInTouchForm {
+        transform: translateX(-335px);
+    }
+
+    .enquirePopupWrapper .nextSlide .prevArrowBtn {
+        top: 15px;
+        left: 15px;
+    }
+
 
 
 }
