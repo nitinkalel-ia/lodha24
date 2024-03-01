@@ -15,8 +15,23 @@
 
 .spotlightSliderDiv .swiper-slide .bannerImgDiv .bannerImg {
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
+.spotlightSliderDiv .swiper-slide .spotLightContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* height: 100vh; */
+    /* top: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding-bottom: 75px;
+}
 
 .ourPromiseSec {
     padding: 130px 0;
@@ -32,7 +47,7 @@
 }
 
 .ourPromiseSec .ourPromiseTextDiv {
-    padding-left: 120px;
+    padding: 0 120px;
     max-width: 550px;
 }
 
@@ -92,7 +107,7 @@
 
 .ourPrideSliderDiv .swiper-slide {
     width: 250px;
-    margin: 0 20px;
+    margin: 0 30px;
     overflow: hidden;
 }
 
@@ -123,27 +138,27 @@
 }
 
 .ourPrideSliderDiv .swiper-slide p {
-    color: var(--Sub-copy, #6D6E70);
+    color: #6D6E70;
     font-family: "Futura Md BT";
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.8rem;
+    line-height: 1.3rem;
     margin-top: 10px;
+    text-align: left;
+    /* padding: 0 2rem; */
 }
 
 .ourPrideSliderDiv .container {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
-.ourPrideSliderDiv .container .swiperBtnDiv {
-    margin-right: 35px;
+.ourPrideSliderDiv .container a {
+    margin: 0 auto;
+    margin-top: 35px;
 }
 
-.ourPrideSliderDiv .container .swiper-button {
-    position: static;
-    margin: 0 15px;
-}
+
 
 
 
@@ -244,6 +259,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.3rem;
+}
+
+.keyFactsSec .numberDiv p {
+    margin-top: 8px;
 }
 
 .keyFactsSec .locationDiv small {
@@ -585,17 +604,46 @@
     width: 300px;
 }
 
+.lifeStyleSec .textListDiv .listDiv .noteContent {
+    margin-top: 32px;
+}
+
 .lifeStyleSec .textListDiv .listDiv ul li {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 15px;
+    align-items: center;
 }
 
 .lifeStyleSec .textListDiv .listDiv ul li img {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    margin-right: 5px;
+    margin-right: 14px;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li p strong {
+    font-weight: 700;
+}
+
+.possDate {
+    font-family: 'Futura Hv BT';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    margin-top: 24px;
+    display: flex;
+    text-transform: uppercase;
 }
 
 .normalTextImgSlider {
@@ -607,6 +655,1015 @@
     margin: 0 8px !important;
 }
 
+.twoSlide .swiper-slide {
+    width: calc((100% / 2) - 12px);
+    margin: 0 8px !important;
+}
+
+.normalTextImgSlider .swiper-slide p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 260px;
+    margin-top: 16px;
+}
+
+
+
+.secodaryNav {
+    box-shadow: 0px 4px 20px 0px #0000000F;
+    min-height: 60px;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.nav-up .secodaryNav {
+    top: 0;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+.secodaryNav ul li {
+    width: auto;
+    margin-right: 40px;
+}
+
+.secodaryNav ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.secodaryNav ul li a.active,
+.secodaryNav ul li a:hover {
+    color: #9D7F19;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .planSec {
     padding: 80px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+}
+
+.planSec .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.planSec .tabWrapper {
+    width: calc(50% + 200px);
+}
+
+.planSec .tabWrapper .swiperBtnDiv,
+.planSec .tabWrapper .tabHeading {
+    width: 800px;
+}
+
+.planSec .tabWrapper .planSlider .swiper-wrapper {
+    padding: 30px 0;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide {
+    margin-right: 30px;
+    width: 288px;
+    cursor: pointer;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide:last-child {
+    /* margin-right: calc(100% - 1200px); */
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide .planImgDiv {
+    border: 1px solid #6D6E70;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide .planImgDiv img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide h6 {
+    font-family: 'Futura Md BT';
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: #6D6E70;
+    margin-top: 16px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv ul li {
+    margin-bottom: 20px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv ul li img {
+    width: 14px;
+    height: 14px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv {
+    width: 400px;
+}
+
+.exploreSec .ContentText .goldenBorderBtn {
+    margin-top: 50px;
+}
+
+.servicesSec .container .row {
+    min-height: 200px;
+}
+
+.servicesSec .ContentText {
+    width: 180px;
+    text-align: center;
+}
+
+.servicesSec ul {
+    width: calc(100% - 180px);
+    padding-right: 20px;
+
+}
+
+.servicesSec ul li {
+    width: calc(100% / 6);
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 800px;
+}
+
+.servicesSec ul li .serviceImgTextDiv {
+    width: 100%;
+    text-align: center;
+    transform: rotateY(0deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li .serviceImgTextDiv img {
+    margin: 0 auto;
+}
+
+.servicesSec ul li .serviceImgTextDiv p {
+    margin-top: 10px;
+    min-height: 40px;
+}
+
+.servicesSec ul li .hoverContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    /* visibility: hidden;
+    opacity: 0; */
+    transform: rotateY(90deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li.active .hoverContent,
+.servicesSec ul li:hover .hoverContent {
+    /* visibility: visible;
+    opacity: 1; */
+    transform: rotateY(0deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li.active .serviceImgTextDiv,
+.servicesSec ul li:hover .serviceImgTextDiv {
+    /* visibility: visible;
+    opacity: 1; */
+    transform: rotateY(90deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li .hoverContent p {
+    font-size: .8rem;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.servicesSec ul li .hoverContent a {
+    margin-top: 20px;
+}
+
+.faqSec {
+    padding: 80px 0;
+}
+
+.reraSec {
+    padding: 0px 0 60px 0;
+}
+
+.reraSec .row {
+    border: 0.4px solid #CACACA;
+    padding: 30px;
+}
+
+.reraSec p {
+    margin-top: 20px;
+}
+
+.reraSec p a {
+    color: #9D7F19;
+}
+
+.reraSec .disclaimerDiv {
+    margin-top: 50px;
+}
+
+.bodSec {
+    padding: 80px 0;
+}
+
+.bodDiv.normalTextImgSlider .swiper-wrapper {
+    gap: 60px;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide {
+    width: calc((100% / 4) - 45px);
+    margin: 0 !important;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide p {
+
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: left;
+    color: #313131;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide span {
+    font-family: 'Futura Bk BT';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    display: flex;
+    margin-top: 7px;
+}
+
+.bodWrapper .bodImg {
+    width: 300px;
+    height: 300px
+}
+
+.bodWrapper .popupContent {
+    width: 1170px;
+}
+
+.bodWrapper .bodContent {
+    width: calc(100% - 400px);
+
+}
+
+.bodWrapper .bodContent h5 {
+    font-family: 'Futura Bk BT';
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #313131;
+}
+
+.bodWrapper .bodContent h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    display: flex;
+    margin-top: 7px;
+}
+
+.bodWrapper .bodContent p {
+    margin-bottom: 15px;
+}
+
+.bodWrapper .bodContent .descDiv {
+    margin-top: 20px;
+    max-height: 235px;
+}
+
+.bodWrapper .bodContent .descDiv .swiper-wrapper {
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+
+}
+
+.bodWrapper .bodContent .descDiv .swiper-slide {
+    padding-right: 20px;
+}
+
+.bodWrapper .bodContent .descDiv .swiper-scrollbar {
+    right: 0px;
+}
+
+.planDetailSec.planSec {
+    display: block;
+    padding: 50px 0;
+}
+
+.planDetailSec.planSec .container {
+    position: static;
+    transform: none;
+}
+
+.planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:first-child {
+    margin-left: calc((100% - 1170px) / 2);
+}
+
+.planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:last-child {
+    margin-right: calc((100% - 1170px) / 2);
+}
+
+.masterPlanSec {
+    padding: 30px 0 160px 0;
+}
+
+.masterPlanSec .mapImg {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.priceSec {
+    padding: 80px 0 100px 0;
+}
+
+.priceListWrapper a {
+    margin-top: 40px;
+}
+
+.priceListWrapper ul {
+    margin-top: 15px;
+}
+
+.priceListWrapper ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.2);
+    display: none;
+}
+
+.priceListWrapper ul li p {
+    width: calc(100% / 2);
+    text-align: center;
+    font-size: 1rem;
+    color: #313131;
+    padding: 25px 10px;
+}
+
+.locationSec {
+    padding: 50px 0 25px 0;
+}
+
+.locationMapSec {
+    padding: 80px 0;
+}
+
+.locationMapSec .row {
+    border: 1px solid rgba(109, 110, 112, 0.3);
+}
+
+.locationMapSec .ContentText {
+    width: calc(100% - 700px);
+    padding: 50px;
+}
+
+.locationMapSec .mapDiv {
+    width: 700px;
+}
+
+.locationMapSec .mapDiv .mapAssets {
+    width: 100%;
+    height: 350px;
+}
+
+.amenitiesSec {
+    padding: 30px 0 80px 0;
+}
+
+.amenitiesSec img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.amenitiesSec .row {
+    padding: 50px;
+}
+
+.amenitiesSec .row h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.amenitiesSec .row ul {
+    margin-top: 18px;
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.amenitiesSec .row ul li {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+    display: none;
+}
+
+.amenitiesSec .row a {
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.galleryTab .tabContent .tabData {
+    padding: 50px 0;
+}
+
+.galleryTab .tabContent .gridDiv {
+    margin-top: 20px;
+}
+
+.gridDiv .setGridDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: masonry; */
+    gap: 16px;
+
+}
+
+.gridDiv .setGridDiv.lastTwoBig .gridCol:nth-last-child(2),
+.gridDiv .setGridDiv.lastTwoBig .gridCol:last-child,
+.gridDiv .setGridDiv.lastBig .gridCol:last-child,
+.gridDiv .setGridDiv .gridCol,
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(1),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(6),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(7),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(12) {
+
+    display: grid;
+    display: none;
+    height: 350px;
+    overflow: hidden;
+    /* grid-row: 1 / -1;
+    grid-column: 1; */
+    position: relative;
+
+
+}
+
+.gridDiv .setGridDiv .gridCol:nth-child(1),
+.gridDiv .setGridDiv .gridCol:nth-child(6),
+.gridDiv .setGridDiv .gridCol:nth-child(7),
+.gridDiv .setGridDiv .gridCol:nth-child(12),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(3),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(4),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(9),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(10) {
+    height: 716px;
+}
+
+.gridDiv .setGridDiv .gridCol img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(3),
+.gridDiv .setGridDiv .gridCol:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(1),
+.gridDiv .setGridDiv .gridCol:nth-child(2) {
+    grid-row: 1/2;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(2),
+.gridDiv .setGridDiv .gridCol:nth-child(3) {
+    grid-row: 2/3;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(5),
+.gridDiv .setGridDiv .gridCol:nth-child(4) {
+    grid-row: 3/4;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(6),
+.gridDiv .setGridDiv .gridCol:nth-child(5) {
+    grid-row: 4/5;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(4),
+.gridDiv .setGridDiv .gridCol:nth-child(6) {
+    grid-row: 3/5;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(9),
+.gridDiv .setGridDiv .gridCol:nth-child(7) {
+    grid-row: 5/7;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(7),
+.gridDiv .setGridDiv .gridCol:nth-child(8) {
+    grid-row: 5/6;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(8),
+.gridDiv .setGridDiv .gridCol:nth-child(9) {
+    grid-row: 6/7;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(11),
+.gridDiv .setGridDiv .gridCol:nth-child(10) {
+    grid-row: 7/8;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(12),
+.gridDiv .setGridDiv .gridCol:nth-child(11) {
+    grid-row: 8/9;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(10),
+.gridDiv .setGridDiv .gridCol:nth-child(12) {
+    grid-row: 7/9;
+}
+
+/* .gridDiv .setGridDiv.lastTwoBig  .gridCol:nth-last-child(2), */
+.gridDiv .setGridDiv.lastTwoBig .gridCol:last-child {
+    grid-row: auto;
+}
+
+
+
+
+.gridDiv .setGridDiv.lastBig .gridCol:last-child {
+    grid-row: auto;
+    grid-column: 1/3;
+}
+
+.imageLightBoxWrapper .popupContent {
+    padding: 0;
+    background: transparent;
+}
+
+.imageLightBoxWrapper .popupContent h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.imageLightBoxWrapper .closed {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.imageLightBoxWrapper .swiper-pagination {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: "Futura Bk BT";
+    width: fit-content;
+    left: auto;
+    bottom: 4px;
+    right: 3px;
+    letter-spacing: -1.5px;
+}
+
+@media screen and (min-width:1024px) and (max-width:1600px) {
+    .imageLightBoxWrapper .container {
+        /* width: 50%; */
+        max-width: 800px;
+        position: relative;
+    }
+}
+
+.noGridDiv .setGridDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.noGridDiv .gridCol {
+    height: unset !important;
+    width: calc((100% / 3) - 11px);
+}
+
+.videoGrid .gridCol:before {
+    content: "";
+    background: url(../media/svg/play_circle.svg) no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.esgSec {
+    padding: 80px 0;
+}
+
+.socialImpactSec {
+    padding: 70px 0;
+}
+
+.recognitionSec {
+    padding: 80px 0;
+}
+
+.bodredCardGridDiv {
+    margin-top: 15px;
+}
+
+.bodredCardGridDiv .bodredCardDiv {
+    border: 0.5px solid #9D7F19;
+    padding: 40px;
+}
+
+.bodredCardGridDiv .bodredCardDiv img {
+    width: 100%;
+    height: 75px;
+    object-fit: contain;
+    object-position: left;
+    filter: grayscale(1);
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodredCardGridDiv .bodredCardDiv:hover img {
+    filter: grayscale(0);
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodredCardGridDiv .bodredCardDiv p {
+    margin-top: 40px;
+}
+
+.blogCard .blogImgDiv {
+    position: relative;
+}
+
+.blogCard .blogImgDiv img {
+    width: 100%;
+}
+
+.blogCard .blogImgDiv .blogCat {
+    min-height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+    font-family: 'Futura Bk BT';
+    font-size: 12px;
+    color: #9D7F19;
+    background: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.blogCard .blogContentDiv {
+    padding: 15px 20px 25px 20px;
+    border: 0.5px solid #9D7F19;
+    border-top: 0;
+}
+
+.blogCard .blogContentDiv .date {
+    font-family: 'Futura Bk BT';
+    font-size: 12px;
+    text-align: left;
+    color: rgba(49, 49, 49, 0.5);
+}
+
+.blogCard .blogContentDiv h5 {
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 20px;
+    line-height: 28px;
+    color: #313131;
+    margin-top: 10px;
+}
+
+.blogCard .blogContentDiv p {
+    margin-top: 10px;
+}
+
+.blogCard .blogContentDiv .goldenLineBtn {
+    margin-top: 20px;
+}
+
+.contactUsSec {
+    padding: 80px 0;
+}
+
+.contactInfoList li {
+    text-align: center;
+    margin-top: 65px;
+    position: relative;
+}
+
+.contactInfoList li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(157, 127, 25, 0.5);
+    height: 40px;
+    width: 1px;
+
+}
+
+.contactInfoList li:nth-child(4n+4):before {
+    opacity: 0;
+}
+
+.contactInfoList h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #9D7F19;
+    margin-bottom: 16px;
+}
+
+.contactInfoList a {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.getInTouchForm {
+    padding: 65px 100px;
+    margin: 80px 0 0 0;
+}
+
+.getInTouchForm .ContentText p {
+    color: #313131;
+}
+
+form {
+    margin: 0 -20px;
+}
+
+.formControls {
+    position: relative;
+    border-bottom: 0.5px solid #000000;
+    padding: 8px;
+    width: calc((100% / 3) - 40px);
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.formControls small,
+.formControls label {
+    font-family: "Futura Bk BT";
+    font-size: 12px;
+    text-align: left;
+    color: #6D6E70;
+    position: absolute;
+    left: 8px;
+    bottom: 11px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControls input:focus~label,
+.formControls.active label {
+    bottom: 35px;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    left: 8px;
+}
+
+.formControls small {
+    position: static;
+}
+
+.formControls small~label {
+    left: 40px;
+}
+
+.formControls small~input {
+    padding-left: 10px;
+}
+
+.formControls input {
+    border: 0;
+    outline: none;
+    font-family: "Futura Bk BT";
+    font-size: 14px;
+    text-align: left;
+    color: #313131;
+    background: transparent;
+    width: 100%;
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    position: relative;
+    z-index: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formControls .dropDownDiv {
+    width: 100%;
+}
+
+.formControls .dropDownDiv span {
+    min-height: 18px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    color: #313131;
+}
+
+.formControls .dropDownDiv .dropList {
+    width: 100%;
+    z-index: 2;
+}
+
+.formControls .dropDownDiv .dropList label {
+    position: static;
+}
+
+.enquirePopupWrapper .getInTouchForm {
+    padding: 65px 70px;
+    min-width: 450px;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.enquirePopupWrapper.active .popupContent .getInTouchForm {
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: translateX(-450px);
+
+}
+
+.formControlsCheck label {
+    padding-left: 25px;
+    font-family: "Futura Bk BT";
+    font-size: 12px;
+    text-align: left;
+    color: #6D6E70;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.formControlsCheck label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #9D7F19
+}
+
+.formControlsCheck label:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    background: #9D7F19;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControlsCheck input:checked~label:after {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControlsCheck input {
+    position: absolute;
+    display: none;
+}
+
+.enquirePopupWrapper .popupContent {
+    display: flex;
+    width: 450px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.enquirePopupWrapper .formControls {
+    width: 100%;
+    margin: 0;
+}
+
+.enquirePopupWrapper .nextSlide {
+    /* position: absolute;
+    top: 0; */
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.enquirePopupWrapper .nextSlide .formControls {
+    background: url(../media/svg/otpbg.png) center bottom no-repeat;
+}
+
+.enquirePopupWrapper .nextSlide .formControls input {
+    font-size: 2rem;
+    letter-spacing: 55px;
+    padding: 0 26px;
+}
+
+.enquirePopupWrapper .nextSlide .prevArrowBtn {
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7px;
+    filter: brightness(0) saturate(100%) invert(47%) sepia(17%) saturate(2658%) hue-rotate(14deg) brightness(99%) contrast(80%);
 }

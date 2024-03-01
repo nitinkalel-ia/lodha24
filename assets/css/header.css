@@ -8,11 +8,11 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     min-height: 60px;
-    z-index: 9;
+    z-index: 999;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-header.nav-up {
+.nav-up header {
     transform: translateY(-60px);
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
@@ -104,7 +104,7 @@ header .mainHeader .linksDiv .staticlinksUl {
     margin-left: 150px;
 }
 
-header .mainHeader .linksDiv .staticlinksUl li {
+header .mainHeader .linksDiv .staticlinksUl>li {
     padding-left: 30px;
 }
 
@@ -134,6 +134,13 @@ header .mainHeader .linksDiv>ul>li.innerMenu.active>a:before {
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+header .mainHeader .linksDiv>ul>li.innerMenu.noArrow>a:before {
+    display: none;
+}
+
+header .mainHeader .linksDiv>ul>li.innerMenu.noArrow>a {
+    padding-right: 0;
+}
 
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv {
@@ -438,3 +445,5 @@ header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksLis
     background: #000;
     color: #fff;
 }
+
+/* .menuOpen header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList */
