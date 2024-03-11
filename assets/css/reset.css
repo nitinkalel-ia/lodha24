@@ -1176,7 +1176,7 @@ p {
     visibility: hidden;
 }
 
-.dropDownDiv.checkDropDown .dropList ul li input:valid~label::after {
+.dropDownDiv.checkDropDown .dropList ul li [type="checkbox"]:checked + label:after {
     opacity: 1;
 }
 

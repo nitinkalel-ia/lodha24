@@ -1667,3 +1667,10 @@ input::-webkit-inner-spin-button {
     padding: 7px;
     filter: brightness(0) saturate(100%) invert(47%) sepia(17%) saturate(2658%) hue-rotate(14deg) brightness(99%) contrast(80%);
 }
+
+/* suraj */
+.ourPrideSec .ourPrideSliderDiv .swiper-wrapper{
+    padding-bottom: 30px;
+}
+
+/* suraj */
