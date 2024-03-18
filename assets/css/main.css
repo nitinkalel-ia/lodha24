@@ -34,7 +34,7 @@
 }
 
 .ourPromiseSec {
-    padding: 130px 0;
+    padding: 70px 0;
 }
 
 .ourPromiseSec .ourPromiseImgDiv,
@@ -540,6 +540,10 @@
     margin-top: 20px;
     position: relative;
     z-index: 3;
+}
+
+.filterListDiv .clearBtnDiv .blackBorderBtn {
+    margin-right: 15px;
 }
 
 .filterDataDiv {
@@ -1668,9 +1672,64 @@ input::-webkit-inner-spin-button {
     filter: brightness(0) saturate(100%) invert(47%) sepia(17%) saturate(2658%) hue-rotate(14deg) brightness(99%) contrast(80%);
 }
 
+.sec404 {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec404 img {
+    margin: 0 auto;
+}
+
+.sec404 .content404 {
+    margin-top: -80px;
+}
+
+.sec404 .content404 h1 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 90px;
+    line-height: 109px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9D7F19;
+}
+
+.sec404 .content404 h5 {
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9D7F19;
+}
+
+.sec404 .content404 p {
+    margin: 4px 0 30px 0;
+}
+
 /* suraj */
-.ourPrideSec .ourPrideSliderDiv .swiper-wrapper{
+.ourPrideSec .ourPrideSliderDiv .swiper-wrapper {
     padding-bottom: 30px;
 }
 
+/* .secodaryNav{
+    position: fixed;
+    width: 100%;
+}
+.priceSec {
+    padding: 140px 0 100px 0;
+}
+
+.planSec.plansPadding{
+    padding: 110px 0 50px 0 !important;
+}
+
+.locationSec {
+    padding: 110px 0 25px 0;
+}
+.amenitiesSec {
+    padding: 90px 0 80px 0;
+} */
 /* suraj */
