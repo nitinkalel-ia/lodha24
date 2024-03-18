@@ -648,6 +648,8 @@ p {
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+
+
 @media screen and (max-width:767px) {
     .goldenLineBtn {
         /* font-size: 12px; */
@@ -706,7 +708,10 @@ p {
     background: #FFF;
 }
 
+.blackBorderBtn {}
+
 @media screen and (max-width:767px) {
+
     .goldenBtn {
         font-size: 12px;
         min-width: 100px;
@@ -715,6 +720,7 @@ p {
     }
 }
 
+.blackBorderBtn,
 .goldenBorderBtn {
     background: #fff;
     min-width: 120px;
@@ -736,13 +742,32 @@ p {
     display: inline-flex;
 }
 
+.blackBorderBtn:hover,
 .goldenBorderBtn:hover {
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     color: #fff;
     background: #9D7F19;
 }
 
+.blackBorderBtn {
+    color: #313131;
+    border-color: #313131;
+}
+
+.blackBorderBtn:hover {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #fff;
+    background: #313131;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
 @media screen and (max-width:767px) {
+
+    .blackBorderBtn,
     .goldenBorderBtn {
         font-size: 12px;
         min-width: 100px;
@@ -1176,7 +1201,7 @@ p {
     visibility: hidden;
 }
 
-.dropDownDiv.checkDropDown .dropList ul li input:valid~label::after {
+.dropDownDiv.checkDropDown .dropList ul li [type="checkbox"]:checked+label:after {
     opacity: 1;
 }
 
@@ -1614,4 +1639,49 @@ p {
     [data-slide-desk="3"] .swiper-slide:last-child {
         margin-right: 20px;
     }
+}
+
+.breadcrumDiv {
+    padding: 25px 0 0 0;
+}
+
+.breadcrumDiv ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.breadcrumDiv ul li {
+    font-family: 'Futura Bk BT';
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6D6E70;
+    padding: 0 8px;
+    position: relative;
+}
+
+.breadcrumDiv ul li:before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-bottom: 1px solid #6D6E70;
+    border-right: 1px solid #6D6E70;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.breadcrumDiv ul li:last-child:before {
+    opacity: 0;
+}
+
+.breadcrumDiv ul li:first-child {
+    padding-left: 0;
+}
+
+.breadcrumDiv ul li:last-child {
+    color: #9D7F19;
 }
