@@ -14,6 +14,7 @@
         display: flex;
     }
 
+
     header .mainHeader .logoDiv .mobMenu .burgerMenu {
         position: relative;
         width: 30px;
@@ -73,11 +74,18 @@
         top: 50%;
     }
 
+    header .mainHeader .logoDiv .mobMenu .mobSearch {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
     .mobMenuOpen header {
         background: transparent;
         backdrop-filter: none;
         transition: none;
     }
+
 
     header .mainHeader .linksDiv {
         position: fixed;
@@ -171,6 +179,25 @@
 
     header .mainHeader .linksDiv .staticlinksUl li a {
         border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .finalResultDiv h6 {
+        font-size: 1rem;
+    }
+
+
+
+    .finalResultDiv p {
+        font-size: 14px;
+    }
+
+    .finalResultDiv .tabWrapper .tabContent ul li h6 {
+        font-size: 14px;
+    }
+
+    .finalResultDiv .tabWrapper .tabContent ul li p {
+        font-size: 12px;
     }
 
     header .mainHeader .linksDiv .staticlinksUl {
@@ -193,7 +220,7 @@
     }
 
     header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .closedMenu,
-    header .mainHeader .linksDiv .staticlinksUl li.searchLi,
+    /* header .mainHeader .linksDiv .staticlinksUl li.searchLi, */
     header .mainHeader .linksDiv>ul>li .innerMenuDiv:before,
     header .mainHeader .linksDiv>ul .activeLine {
         display: none !important;
@@ -322,6 +349,148 @@
 
     .stickyHeader ul li a img {
         margin-right: 10px;
+    }
+
+    .searchLi {
+        position: fixed;
+        width: 100% !important;
+        height: 100svh;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transform: translateX(0%);
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .mobSearchOpen .searchLi {
+        transform: translateX(-100%);
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .searchLi:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(24, 22, 21, 0.80);
+        backdrop-filter: blur(12.5px);
+        -webkit-backdrop-filter: blur(12.5px);
+    }
+
+    .searchLi>a {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi>.innerMenuDiv .innerLinksList .closedMenu {
+        display: flex !important;
+        top: 15px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv {
+        display: block !important;
+        position: fixed;
+        height: 100svh;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList {
+        transform: none !important;
+        transition-delay: 0s !important;
+        transition: none !important;
+        opacity: 1 !important;
+        padding-top: 60px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv {
+        width: 100%;
+        padding-top: 50px;
+        border: 0;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv img {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv {
+        height: 45px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
+        padding: 5px 20px;
+    }
+
+    .serachAutofillDiv ul {
+        padding: 0 25px;
+    }
+
+    .serachAutofillDiv ul li {
+        padding: 15px 0 !important;
+        border-bottom: 1px solid rgba(109, 110, 112, 0.3) !important;
+    }
+
+    .finalResultDiv {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .finalResultDiv .tabWrapper .tabContent ul li {
+        padding: 10px 25px 20px 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .finalResultDiv .tabWrapper .tabHeading li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .finalResultDiv .tabWrapper .tabHeading {
+        overflow-x: auto;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        padding: 0 15px;
+    }
+
+
+    .finalResultDiv .tabWrapper .tabHeading::-webkit-scrollbar {
+        opacity: 0;
+        background: transparent;
+    }
+
+    .finalResultDiv .tabWrapper .tabHeading::-webkit-scrollbar:hover {
+        opacity: 1;
+    }
+
+
+
+    .finalResultDiv .tabWrapper .tabHeading li a {
+        white-space: nowrap;
+    }
+
+    .finalResultDiv .tabWrapper .tabHeading li a:hover,
+    .finalResultDiv .tabWrapper .tabHeading li a.active {
+        border-color: #fff !important;
+    }
+
+    .finalResultDiv .tabWrapper .tabContent {
+        /* margin-top: 0; */
+    }
+
+    .serachAutofillDiv {
+        top: 45px;
+    }
+
+    .finalResultDiv .tabWrapper .tabContent .swiper {
+        max-height: calc(100svh - 297px);
     }
 
     footer .mainFooterMenu .container .row {
@@ -992,6 +1161,11 @@
         left: 15px;
     }
 
+    /* suraj */
+    .ourPrideSec .ourPrideSliderDiv .swiper-wrapper {
+        padding-bottom: 0;
+    }
 
+    /* suraj */
 
 }

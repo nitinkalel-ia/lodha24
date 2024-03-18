@@ -75,13 +75,14 @@ $(document).ready(function () {
         lastScrollTop = st;
     }
 
-    $(document).on('click', 'header .mainHeader .linksDiv>ul>li.innerMenu a', function () {
+    $(document).on('click', 'header .mainHeader .linksDiv>ul>li.innerMenu>a', function () {
         if ($(this).parent('li').hasClass('active')) {
-            $('html').removeClass('menuOpen');
+            $('html').removeClass('menuOpen overflowHidden');
             $(this).parent('li').removeClass('active');
             $(this).next('.innerMenuDiv').slideUp();
+
         } else {
-            $('html').addClass('menuOpen');
+            $('html').addClass('menuOpen overflowHidden');
             $(this).parents('.linksDiv').find('li').removeClass('active');
             $(this).parent('li').addClass('active');
             $(this).parents('.linksDiv').find('.innerMenuDiv').slideUp();
@@ -89,7 +90,7 @@ $(document).ready(function () {
         }
     });
     $(document).on('click', 'header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .closedMenu', function () {
-        $('html').removeClass('menuOpen');
+        $('html').removeClass('menuOpen mobSearchOpen overflowHidden');
         $('.linksDiv li').removeClass('active');
         $('.linksDiv .innerMenuDiv').slideUp();
     });
@@ -115,12 +116,21 @@ $(document).ready(function () {
         });
         $(document).on('click', 'header .mainHeader .logoDiv .mobMenu .burgerMenu', function () {
             if ($('html').hasClass('mobMenuOpen')) {
-                $('html').removeClass('mobMenuOpen');
+                $('html').removeClass('mobMenuOpen overflowHidden mobSearchOpen');
                 $('header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .closedMenu').click();
             } else {
-                $('html').addClass('mobMenuOpen');
+                $('html').addClass('mobMenuOpen overflowHidden mobSearchOpen');
             }
         });
+        $(document).on('click', 'header .mainHeader .logoDiv .mobMenu .mobSearch', function () {
+            if ($('html').hasClass('mobSearchOpen')) {
+                $('html').removeClass('mobSearchOpen overflowHidden mobMenuOpen');
+                $('header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .closedMenu').click();
+            } else {
+                $('html').addClass('mobSearchOpen overflowHidden');
+            }
+        });
+
     } else {
 
 
@@ -207,12 +217,21 @@ $(document).ready(function () {
     //     }, 1000);
     // });
 
-    $(document).on('click', '.filterListDiv .clearBtnDiv a', function (e) {
+    $(document).on('click', '.filterListDiv .clearBtnDiv .clearBtn', function (e) {
         $(this).parents('.filterListDiv').find('.dropDownDiv span').each(function () {
             $(this).text($(this).attr('data-placeholder'));
+
         });
+        $(this).addClass('disabled');
+    });
+    $('.filterListDiv .dropDownDiv .dropList ul li').on('click', function () {
+
+        $(this).parents('.filterListDiv').find('.disabled').removeClass('disabled');
 
     });
+
+
+
 
     $(document).on('keyup', '.dropDownDiv .dropList .searchListInput', function () {
         var $this = $(this);
@@ -234,19 +253,19 @@ $(document).ready(function () {
         tabSwiperSliderrVar = new Swiper(".tabSwiperSlider", {
             direction: "horizontal",
             slidesPerView: "1",
+            effect: "fade",
             loop: false,
             autoHeight: true,
             allowTouchMove: false,
             watchOverflow: true,
-            watchSlidesProgress: true,
         });
     }, 10);
 
-    $(document).on('click', '.tabWrapper .tabHeading li a', function () {
+    $(document).on('click', '.tabWrapper .tabHeading li a', function (e) {
         var $this = $(this);
         $this.parents('.tabHeading').find('a').removeClass('active');
         $this.addClass('active');
-        tabSwiperSliderrVar.slideTo($this.attr('data-slide'), 500);
+        tabSwiperSliderrVar.slideTo($this.attr('data-slide'), 1);
 
     });
 
@@ -305,25 +324,25 @@ $(document).ready(function () {
     $(document).on('click', '.imgPopupClick', function () {
         var $this = $(this);
         $('html').addClass('imgLightBoxOpen overflowHidden');
+
         // $('.imagePopupWrapper .mainImg').attr('src', $(this).attr('data-img'));
 
         if ($this.attr('data-popup-img')) {
-            if ($this.parents('.onlyPopup')) {
+            if ($this.parents('.onlyPopup').length > 0) {
                 $this.parents('.onlyPopup').find('.imgPopupClick[data-popup-img]').each(function () {
-                    console.log('true')
                     $('.imageLightBoxWrapper .lightBoxSliderActive .swiper-wrapper').append('<div class="swiper-slide"><div ><img src="' + $(this).attr('data-popup-img') + '" alt="Banner" class="img-fluid"><p>' + $(this).attr('data-title') + '</p> </div> </div > ')
 
                 });
             } else {
                 $('.imgPopupClick[data-popup-img]').each(function () {
-                    console.log('true')
+
                     $('.imageLightBoxWrapper .lightBoxSliderActive .swiper-wrapper').append('<div class="swiper-slide"><div ><img src="' + $(this).attr('data-popup-img') + '" alt="Banner" class="img-fluid"><p>' + $(this).attr('data-title') + '</p> </div> </div > ')
 
                 });
             }
 
         } else if ($this.attr('data-popup-iframe').length > 0) {
-            if ($this.parents('.onlyPopup')) {
+            if ($this.parents('.onlyPopup').length > 0) {
                 $this.parents('.onlyPopup').find('.imgPopupClick[data-popup-iframe]').each(function () {
 
                     $('.imageLightBoxWrapper .lightBoxSliderActive .swiper-wrapper').append('<div class="swiper-slide"><div ><iframe data-src="' + $(this).attr('data-popup-iframe') + '" alt="Banner" class="img-fluid" frameborder="0" allowfullscreen=""></iframe><p>' + $(this).attr('data-title') + '</p> </div> </div > ')
@@ -496,11 +515,31 @@ $(document).ready(function () {
     });
 
     $('.formControls').each(function () {
-        if (($(this).find('input').val().length > 0) || ($(this).find('.dropDownDiv span').text().length > 0)) {
+
+        var $input = $(this).find('input');
+
+        var $span = $(this).find('.dropDownDiv span');
+
+        // Check if $input exists and has a value
+
+        var inputLength = $input.length > 0 ? $input.val().length : 0;
+
+        // Check if $span exists and has text content
+
+        var spanLength = $span.length > 0 ? $span.text().length : 0;
+
+        // Check if either $input or $span has content
+
+        if (inputLength > 0 || spanLength > 0) {
+
             $(this).addClass('active');
+
         } else {
+
             $(this).removeClass('active');
+
         }
+
     });
 
     $('.formControls input').on('keypress', function () {
@@ -509,6 +548,30 @@ $(document).ready(function () {
         } else {
             $(this).parents('.formControls').removeClass('active');
         }
+    });
+
+    $('.globalSearchDiv .searchDiv input').on('keyup', function () {
+        var $this = $(this);
+        setTimeout(() => {
+            if (($this.val().length >= 1)) {
+                $this.parents('.globalSearchDiv').find('.serachAutofillDiv').slideDown();
+            } else {
+                $this.parents('.globalSearchDiv').find('.serachAutofillDiv').slideUp();
+                $(this).parents('.innerSearchDiv').find('.recentlyDiv').show();
+                $(this).parents('.innerSearchDiv').next('.finalResultDiv').hide();
+            }
+        }, 10);
+    });
+    $('.globalSearchDiv .searchDiv .searchButtonDiv .searchBtn').on('click', function () {
+        if ($('.globalSearchDiv .searchDiv input').val().length >= 1) {
+            $(this).parents('.innerSearchDiv').find('.recentlyDiv').hide();
+            $(this).parents('.innerSearchDiv').next('.finalResultDiv').show();
+            $(this).parents('.globalSearchDiv').find('.serachAutofillDiv').slideUp();
+        }
+    });
+
+    $('header .mainHeader .logoDiv .mobMenu .mobSearch').on('click', function () {
+        $('.searchLi>a').click();
     });
 
     var secondNavSliderVar = new Swiper(".secondNavSliderActive", {
@@ -680,10 +743,14 @@ $(document).ready(function () {
         direction: "vertical",
         slidesPerView: "auto",
         freeMode: true,
+        observer: true,
+        observeParents: true,
+        resizeObserver: true,
         scrollbar: {
             el: ".scrollVerticalSlider .swiper-scrollbar",
             draggable: true,
         },
         mousewheel: true,
     });
+
 });

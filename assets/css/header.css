@@ -314,6 +314,7 @@ header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithS
     justify-content: flex-end;
     align-items: center;
     margin-right: 20px;
+    position: relative;
 }
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv .searchButtonDiv img {
@@ -446,4 +447,198 @@ header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksLis
     color: #fff;
 }
 
-/* .menuOpen header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList */
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv {
+    width: 840px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv:before {
+    opacity: 0;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv {
+    width: 100%;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.3);
+    border-radius: 0;
+    height: 60px;
+    overflow: unset;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input {
+    font-size: 1.375rem;
+    padding-left: 10px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv img {
+    width: 25px;
+    height: 25px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv .searchButtonDiv {
+    margin-right: 10px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv {
+    margin-bottom: 50px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv h6 {
+    font-size: 1rem;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
+    padding: 8px 20px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul.normalText {
+    gap: 40px;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul.normalText li a {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent !important;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul.normalText li a:hover {
+    color: #fff;
+}
+
+header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv {
+    height: 100vh;
+}
+
+.serachAutofillDiv {
+    background: #121212;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.serachAutofillDiv .swiper {
+    max-height: 300px;
+}
+
+.serachAutofillDiv ul {
+    padding: 0 45px;
+}
+
+.serachAutofillDiv ul li {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.3);
+}
+
+.serachAutofillDiv ul li a {
+    font-family: 'Futura Lt BT';
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.serachAutofillDiv .swiper-scrollbar-drag,
+.serachAutofillDiv .swiper-wrapper {
+    transition: all 0.5s linear !important;
+}
+
+.finalResultDiv {
+    width: 840px;
+    display: none;
+    margin-top: 20px;
+}
+
+.finalResultDiv h6 {
+    font-family: 'Futura Md BT';
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.finalResultDiv p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.finalResultDiv .tabWrapper {
+    margin-top: 1rem;
+}
+
+.finalResultDiv .tabWrapper .tabHeading {
+    gap: 16px;
+}
+
+.finalResultDiv .tabWrapper .tabHeading li a {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5) !important;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.finalResultDiv .tabWrapper .tabHeading li a:hover,
+.finalResultDiv .tabWrapper .tabHeading li a.active {
+    color: #fff !important;
+    border-color: #fff;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.finalResultDiv .tabWrapper .tabHeading:after {
+    display: none;
+}
+
+.finalResultDiv .tabWrapper .tabContent {
+
+    margin-top: 18px;
+}
+
+.finalResultDiv .tabWrapper .tabContent .swiper {
+    max-height: calc(100vh - 315px);
+    background: rgba(0, 0, 0, 1);
+}
+
+.finalResultDiv .tabWrapper .tabContent .swiper-scrollbar-drag,
+.finalResultDiv .tabWrapper .tabContent .swiper-wrapper {
+    transition: all 0.5s linear !important;
+}
+
+.finalResultDiv .tabWrapper .tabContent ul li {
+    padding: 16px 40px 25px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.finalResultDiv .tabWrapper .tabContent ul li:first-child {
+    border: 0;
+}
+
+.finalResultDiv .tabWrapper .tabContent ul li span {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+}
+
+.finalResultDiv .tabWrapper .tabContent ul li h6 {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.finalResultDiv .tabWrapper .tabContent ul li p {
+    margin-top: 5px;
+}
