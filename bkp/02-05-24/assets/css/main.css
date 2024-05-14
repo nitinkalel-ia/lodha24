@@ -1,0 +1,2729 @@
+.spotlightSliderDiv .swiper-slide {
+    position: relative;
+}
+
+.spotlightSliderDiv .swiper-slide .bannerImgDiv {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background: #FFFBEC;
+}
+
+.spotlightSliderDiv .swiper-slide .bannerImgDiv .bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spotlightSliderDiv .swiper-slide .iframeDiv {
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+}
+
+.spotlightSliderDiv .swiper-slide .iframeDiv .bannerImg {
+    object-fit: cover;
+    width: 300%;
+    height: 100%;
+    max-width: none;
+    margin-left: -100%;
+}
+
+.spotlightSliderDiv .swiper-slide .spotLightContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* height: 100vh; */
+    /* top: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding-bottom: 75px;
+}
+
+.ourPromiseSec {
+    padding: 70px 0;
+}
+
+.ourPromiseSec .ourPromiseImgDiv,
+.ourPromiseSec .ourPromiseTextDiv {
+    width: 50%;
+}
+
+.ourPromiseSec .ourPromiseImgDiv img {
+    width: 100%;
+}
+
+.ourPromiseSec .ourPromiseTextDiv {
+    padding: 0 120px;
+    max-width: 550px;
+}
+
+.ourPurposeSec {
+    min-height: 100vh;
+    background: #FFFBEC;
+    position: relative;
+}
+
+.ourPurposeSec .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.ourPurposeSec .ourPurposeImgDiv {
+    width: 55%;
+    height: 100vh;
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv:hover img {
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.ourPurposeSec .ourPurposeImgDiv .imgDiv .underlineArrowBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+
+.ourPrideSec {
+    padding: 80px 0 0 0;
+
+}
+
+.ourPrideSliderDiv {
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.ourPrideSliderDiv .swiper-slide {
+    width: 250px;
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.ourPrideSliderDiv .swiper-slide:first-child {
+    margin-left: 90px;
+}
+
+.ourPrideSliderDiv .swiper-slide:last-child {
+    margin-right: 90px;
+}
+
+.ourPrideSliderDiv .swiper-slide a {
+    display: block;
+}
+
+.ourPrideSliderDiv .swiper-slide img {
+    width: 100%;
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodDiv .swiper-slide img {
+    filter: grayscale(1);
+}
+
+.ourPrideSliderDiv .swiper-slide .ourPrideImgDiv {
+    overflow: hidden;
+}
+
+.ourPrideSliderDiv .swiper-slide:hover img {
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.ourPrideSliderDiv .swiper-slide p {
+    color: #6D6E70;
+    font-family: "Futura Md BT";
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    text-align: left;
+    /* padding: 0 2rem; */
+}
+
+.ourPrideSliderDiv .container {
+    /* margin-top: 40px; */
+}
+
+.ourPrideSliderDiv .container a {
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+.ourBrandsSec {
+    padding-bottom: 80px;
+}
+
+.ourBrandsSec .ourBrandsDiv {
+    gap: 100px;
+    margin-top: 45px;
+}
+
+.ourBrandsSec .ourBrandsDiv img {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.ourStorySec {
+    padding: 80px 0;
+}
+
+
+.textImgGrid .textImgDiv {
+    padding-top: 30px;
+}
+
+.evenRow .textImgDiv:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.oddRow .textImgDiv:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.textImgGrid .textImgDiv .imgDiv {
+    width: 45%;
+}
+
+.textImgGrid .textImgDiv .imgDiv img {
+    width: 100%;
+}
+
+.textImgGrid .textImgDiv .textDiv {
+    padding-left: 100px;
+    width: 55%;
+}
+
+.textImgGrid .textImgDiv .textDiv .ourPromiseTextDiv {
+    width: 400px;
+}
+
+.keyFactsSec {
+    padding: 50px 0 30px;
+    background: #F8F8F8;
+
+}
+
+.keyFactsSec .keyContentDiv {
+    margin-top: 25px;
+    padding: 0 100px;
+    position: relative;
+}
+
+.keyFactsSec .keyContentDiv:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1px;
+    height: 100%;
+    background: rgba(157, 127, 25, 0.23);
+}
+
+.keyFactsSec .projectsDiv,
+.keyFactsSec .textDiv {
+    width: 100%;
+}
+
+.keyFactsSec span {
+    color: #9D7F19;
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-right: 25px;
+}
+
+.keyFactsSec p {
+    color: #9D7F19;
+    font-family: "Futura Bk BT";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.keyFactsSec .numberDiv p {
+    margin-top: 8px;
+}
+
+.keyFactsSec .locationDiv small {
+    color: #9D7F19;
+    text-align: center;
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 0.8rem;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.keyFactsSec .contentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: normal;
+}
+
+.keyFactsSec .locationDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.keyFactsSec .projectsDiv ul li {
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.keyFactsSec .projectsDiv ul li:first-child {
+    margin-top: 0;
+}
+
+.keyFactsSec .projectsDiv ul li span {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.keyFactsSec .projectsDiv ul li p {
+    width: calc(100% - 60px);
+}
+
+.keyFactsSec .saleText {
+    color: #000;
+    font-family: "Futura Bk BT";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    opacity: 0.5;
+    margin-top: 70px;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.whoWeAreSec {
+    padding: 80px 0;
+}
+
+.teamDiv {
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.teamDiv .ContentText {
+    background: #FFFBEC;
+    padding: 35px 60px;
+    text-align: center;
+}
+
+.featuredAwardsSec {
+    padding: 50px 0 100px 0;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv {
+    padding: 0 100px;
+    margin-top: 30px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .imgDiv,
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv {
+    width: 50%;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .imgDiv img {
+    width: 350px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv ul li {
+    margin-top: 20px;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv ul li:first-child {
+    margin-top: 0;
+}
+
+.featuredAwardsSec .featuredAwardsImgTextDiv .textDiv .arrowPlainBtn {
+    margin-top: 35px;
+}
+
+.ourValuesSec {
+    padding: 0 0 80px;
+}
+
+.ourValuesSec .valuesWrapper {
+    margin-top: 30px;
+}
+
+.ourValuesSec .valuesWrapper .linesDiv {
+    width: 53px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex !important;
+    position: absolute;
+    left: 0;
+}
+
+.ourValuesSec .valuesWrapper .linesDiv span {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    background: #d1d1d1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.ourValuesSec .valuesWrapper .linesDiv span.active {
+    background: #6d6e70;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv {
+    /* width: 100%; */
+    padding-left: 100px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv p {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #9D7F19;
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 1rem;
+    line-height: 1.3rem;
+    opacity: 0.4;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv .textDivAnimate {
+    margin-left: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv .textDivAnimate div {
+    opacity: 0;
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+    transform: translateX(100px);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv div.active {
+    width: 180px;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ourValuesSec .valuesWrapper .valuesTextDiv div.current p {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.deveSec {
+    padding: 60px 0;
+}
+
+.instaSliderDiv {
+    margin-top: 25px;
+}
+
+.instaSliderDiv .swiper-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.instaSliderDiv .swiper-slide {
+    width: calc((100% / 4) - 13px);
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .instaImg {
+    width: 100%;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .copyImg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.instaSliderDiv .swiper-slide .instaImgDiv .playImg {
+    position: absolute;
+    cursor: pointer;
+}
+
+.projctsDiv {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.projctsDiv .projectSearchDiv {
+    padding: 45px 10px 22px 0;
+    border-bottom: 0.3px solid #A0A0A0;
+}
+
+.projctsDiv .projectSearchDiv input {
+    width: 100%;
+    border: 0;
+    color: #313131;
+    font-family: "Futura Lt BT";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    outline: none;
+}
+
+.projctsDiv .projectSearchDiv input::placeholder {
+    color: #6D6E70;
+}
+
+.projctsDiv .projectSearchDiv .searchButtonDiv img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(119%) hue-rotate(182deg) brightness(102%) contrast(88%);
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.projctsDiv .projectSearchDiv .searchButtonDiv .closedBtn {
+    display: none;
+}
+
+.projectFilterDiv {
+    margin-top: 50px;
+}
+
+.projectFilterDiv .listDiv {
+    gap: 40px;
+}
+
+.projectFilterDiv .filterListDiv {
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.filterListDiv .clearBtnDiv .blackBorderBtn {
+    margin-right: 15px;
+}
+
+.filterDataDiv {
+    margin-top: 30px;
+}
+
+.filterDataDiv .filterDataRow {
+    margin-top: 50px;
+}
+
+.filterSliderDiv {
+    width: 100%;
+}
+
+.cardDiv {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    z-index: 1;
+    transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cardDiv:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 57.71%), transparent -271.608px -96px / 357.977% 143.714% no-repeat;
+}
+
+.cardDiv a {
+    position: relative;
+}
+
+.cardDiv img {
+    width: 100%;
+}
+
+.cardDiv h6 {
+    color: #FFF;
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.hoverCard {
+    position: relative;
+    -webkit-transition: 0.8s;
+    -webkit-transform-style: preserve-3d;
+}
+
+
+.hoverDiv {
+    border: 1px solid #9D7F19;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hoverDiv a {
+    padding: 25px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hoverCard,
+.hoverCard .front,
+.hoverCard .back,
+.hoverCard img {
+    height: 342px;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.filterSliderDiv .swiper-wrapper {
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.filterSliderDiv .swiper-slide {
+    -webkit-perspective: 1000;
+    background: transparent;
+    margin: 25px 12px;
+    width: calc((100% / 4) - 19px);
+}
+
+.filterSliderDiv .swiper-slide:nth-child(4n + 4) {
+    margin-right: 1px;
+}
+
+.filterSliderDiv .swiper-slide:first-child,
+.filterSliderDiv .swiper-slide:nth-child(5n + 5) {
+    margin-left: 1px;
+}
+
+.filterSliderDiv .swiper-slide:hover .hoverCard,
+.filterSliderDiv .swiper-slide.hover .flhoverCardipper {
+    -webkit-transform: rotateY(-180deg);
+}
+
+/* back, initially hidden */
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    background: #fff;
+}
+
+
+.hoverDiv ul li {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    margin-bottom: 7px;
+}
+
+.featuredProjectSec {
+    padding: 50px 0;
+}
+
+.lifeStyleSec {
+    padding: 60px 0;
+}
+
+.lifeStyleSec .textListDiv .ContentText {
+    width: 500px;
+}
+
+.lifeStyleSec .textListDiv .listDiv {
+    width: 300px;
+}
+
+.lifeStyleSec .textListDiv .listDiv .noteContent {
+    margin-top: 32px;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li>div {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li p {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+}
+
+.lifeStyleSec .textListDiv .listDiv ul li p strong {
+    font-weight: 700;
+    display: flex;
+    min-width: 100px;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+.possDate {
+    font-family: 'Futura Hv BT';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    margin-top: 24px;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.normalTextImgSlider {
+    padding-bottom: 0;
+}
+
+.normalTextImgSlider .swiper-slide {
+    width: calc((100% / 3) - 16px);
+    margin: 0 8px !important;
+}
+
+.twoSlide .swiper-slide {
+    width: calc((100% / 2) - 12px);
+    margin: 0 8px !important;
+}
+
+.normalTextImgSlider .swiper-slide p {
+    /* text-align: center;
+    margin: 0 auto; */
+    max-width: 260px;
+    margin-top: 16px !important;
+}
+
+
+
+.secodaryNav {
+    box-shadow: 0px 4px 20px 0px #0000000F;
+    min-height: 60px;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.nav-up .secodaryNav {
+    top: 0;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+.secodaryNav ul li {
+    width: auto;
+    margin-right: 40px;
+}
+
+.secodaryNav ul li:last-child {
+    margin-right: 0;
+}
+
+.secodaryNav ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.secodaryNav ul li a.active,
+.secodaryNav ul li a:hover {
+    color: #9D7F19;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.planSec {
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+}
+
+.planSec .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.planSec .tabWrapper {
+    width: calc(50% + 200px);
+}
+
+.planSec .tabWrapper .swiperBtnDiv,
+.planSec .tabWrapper .tabHeading {
+    width: 800px;
+}
+
+.planSec .tabWrapper .planSlider .swiper-wrapper {
+    padding: 30px 0;
+    background: #fff;
+    /* transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important; */
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide {
+    margin-right: 30px;
+    width: 288px;
+    cursor: pointer;
+    pointer-events: unset;
+}
+
+.planSec .tabWrapper .tabData {
+    opacity: 0 !important;
+    /* visibility: hidden !important; */
+}
+
+.planSec .tabWrapper .tabData.swiper-slide-active {
+    opacity: 1 !important;
+    /* visibility: visible !important; */
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide:last-child {
+    /* margin-right: calc(100% - 1200px); */
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide .planImgDiv {
+    border: 1px solid #6D6E70;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide .planImgDiv img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.planSec .tabWrapper .planSlider .swiper-slide h6 {
+    font-family: 'Futura Md BT';
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: #6D6E70;
+    margin-top: 16px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv ul li {
+    margin-bottom: 20px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv ul li img {
+    width: 14px;
+    height: 14px;
+}
+
+.exploreSec.lifeStyleSec .textListDiv .listDiv {
+    width: 400px;
+}
+
+.exploreSec .ContentText .goldenBorderBtn {
+    margin-top: 50px;
+}
+
+.servicesSec .container .row {
+    min-height: 200px;
+}
+
+.servicesSec .ContentText {
+    width: 180px;
+    text-align: center;
+}
+
+.servicesSec ul {
+    width: calc(100% - 180px);
+    padding-right: 20px;
+
+}
+
+.servicesSec ul li {
+    width: calc(100% / 6);
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 800px;
+}
+
+.servicesSec ul li .serviceImgTextDiv {
+    width: 100%;
+    text-align: center;
+    transform: rotateY(0deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li .serviceImgTextDiv img {
+    margin: 0 auto;
+}
+
+.servicesSec ul li .serviceImgTextDiv p {
+    margin-top: 10px;
+    min-height: 40px;
+}
+
+.servicesSec ul li .hoverContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    /* visibility: hidden;
+    opacity: 0; */
+    transform: rotateY(90deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li.active .hoverContent,
+.servicesSec ul li:hover .hoverContent {
+    /* visibility: visible;
+    opacity: 1; */
+    transform: rotateY(0deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li.active .serviceImgTextDiv,
+.servicesSec ul li:hover .serviceImgTextDiv {
+    /* visibility: visible;
+    opacity: 1; */
+    transform: rotateY(90deg);
+    transition: all 0.5s linear;
+}
+
+.servicesSec ul li .hoverContent p {
+    font-size: .8rem;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.servicesSec ul li .hoverContent a {
+    margin-top: 20px;
+}
+
+.faqSec {
+    padding: 80px 0;
+}
+
+.reraSec {
+    padding: 0px 0 60px 0;
+}
+
+.reraSec .row {
+    border: 0.4px solid #CACACA;
+    padding: 30px;
+}
+
+.reraSec p {
+    /* margin-top: 20px; */
+}
+
+.reraSec p a {
+    color: #9D7F19;
+}
+
+.reraSec .disclaimerDiv {
+    margin-top: 50px;
+}
+
+.bodSec {
+    padding: 80px 0;
+}
+
+.bodDiv.normalTextImgSlider .swiper-wrapper {
+    gap: 60px;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide {
+    width: calc((100% / 4) - 45px);
+    margin: 0 !important;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide p {
+
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: left;
+    color: #313131;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.bodDiv.normalTextImgSlider .swiper-slide span {
+    font-family: 'Futura Bk BT';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    display: flex;
+    margin-top: 7px;
+}
+
+.bodWrapper .bodImg {
+    width: 300px;
+    /* height: 300px; */
+    filter: grayscale(1);
+}
+
+.bodWrapper .popupContent {
+    width: 1170px;
+}
+
+.bodWrapper .bodContent {
+    width: calc(100% - 400px);
+
+}
+
+.bodWrapper .bodContent h5 {
+    font-family: 'Futura Bk BT';
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #313131;
+}
+
+.bodWrapper .bodContent h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9D7F19;
+    display: flex;
+    margin-top: 7px;
+}
+
+.bodWrapper .bodContent p {
+    margin-bottom: 15px;
+}
+
+.bodWrapper .bodContent .descDiv {
+    margin-top: 20px;
+    max-height: 235px;
+}
+
+.bodWrapper .bodContent .descDiv .swiper-wrapper {
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+
+}
+
+.bodWrapper .bodContent .descDiv .swiper-slide {
+    padding-right: 20px;
+}
+
+.bodWrapper .bodContent .descDiv .swiper-scrollbar {
+    right: 0px;
+}
+
+.planDetailSec.planSec {
+    display: block;
+    padding: 50px 0;
+}
+
+.planDetailSec.planSec .container {
+    position: static;
+    transform: none;
+}
+
+.planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:first-child {
+    margin-left: calc((100% - 1170px) / 2);
+}
+
+.planDetailSec.planSec .tabWrapper .planSlider .swiper-slide:last-child {
+    margin-right: calc((100% - 1170px) / 2);
+}
+
+.masterPlanSec {
+    padding: 30px 0 160px 0;
+}
+
+.masterPlanSec .mapImg {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.priceSec {
+    padding: 80px 0 100px 0;
+}
+
+.priceListWrapper a {
+    margin-top: 40px;
+}
+
+.priceListWrapper ul {
+    margin-top: 15px;
+}
+
+.priceListWrapper ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.2);
+    display: none;
+}
+
+.priceListWrapper ul li p {
+    width: calc(100% / 2);
+    text-align: center;
+    font-size: 1rem;
+    color: #313131;
+    padding: 25px 10px;
+}
+
+.locationSec {
+    padding: 50px 0 25px 0;
+}
+
+.locationMapSec {
+    padding: 80px 0;
+}
+
+.locationMapSec .row {
+    border: 1px solid rgba(109, 110, 112, 0.3);
+}
+
+.locationMapSec .ContentText {
+    width: calc(100% - 700px);
+    padding: 50px;
+}
+
+.locationMapSec .mapDiv {
+    width: 700px;
+}
+
+.locationMapSec .mapDiv .mapAssets {
+    width: 100%;
+    height: 350px;
+}
+
+.amenitiesSec {
+    padding: 30px 0 80px 0;
+}
+
+.amenitieSliderDiv {
+    margin: 0 auto;
+}
+
+.amenitiesSec img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.amenitiesSec .row {
+    padding: 50px;
+}
+
+.amenitiesSec .row .col-3 {
+    padding-right: 20px;
+}
+
+.amenitiesSec .row h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.amenitiesSec .row ul {
+    margin-top: 18px;
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.amenitiesSec .row ul li {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+    display: none;
+}
+
+.amenitiesSec .row a {
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.galleryTab .tabContent .tabData {
+    padding: 50px 0;
+}
+
+.galleryTab .tabContent .gridDiv {
+    margin-top: 20px;
+}
+
+.gridDiv .setGridDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: masonry; */
+    gap: 16px;
+
+}
+
+.gridDiv .setGridDiv.lastTwoBig .gridCol:nth-last-child(2),
+.gridDiv .setGridDiv.lastTwoBig .gridCol:last-child,
+.gridDiv .setGridDiv.lastBig .gridCol:last-child,
+.gridDiv .setGridDiv .gridCol,
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(1),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(6),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(7),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(12) {
+
+    display: grid;
+    display: none;
+    height: 350px;
+    overflow: hidden;
+    /* grid-row: 1 / -1;
+    grid-column: 1; */
+    position: relative;
+
+
+}
+
+.gridDiv .setGridDiv .gridCol:nth-child(1),
+.gridDiv .setGridDiv .gridCol:nth-child(6),
+.gridDiv .setGridDiv .gridCol:nth-child(7),
+.gridDiv .setGridDiv .gridCol:nth-child(12),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(3),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(4),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(9),
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(10) {
+    height: 716px;
+}
+
+.gridDiv .setGridDiv .gridCol img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(3),
+.gridDiv .setGridDiv .gridCol:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(1),
+.gridDiv .setGridDiv .gridCol:nth-child(2) {
+    grid-row: 1/2;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(2),
+.gridDiv .setGridDiv .gridCol:nth-child(3) {
+    grid-row: 2/3;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(5),
+.gridDiv .setGridDiv .gridCol:nth-child(4) {
+    grid-row: 3/4;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(6),
+.gridDiv .setGridDiv .gridCol:nth-child(5) {
+    grid-row: 4/5;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(4),
+.gridDiv .setGridDiv .gridCol:nth-child(6) {
+    grid-row: 3/5;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(9),
+.gridDiv .setGridDiv .gridCol:nth-child(7) {
+    grid-row: 5/7;
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(7),
+.gridDiv .setGridDiv .gridCol:nth-child(8) {
+    grid-row: 5/6;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(8),
+.gridDiv .setGridDiv .gridCol:nth-child(9) {
+    grid-row: 6/7;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(11),
+.gridDiv .setGridDiv .gridCol:nth-child(10) {
+    grid-row: 7/8;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(12),
+.gridDiv .setGridDiv .gridCol:nth-child(11) {
+    grid-row: 8/9;
+
+}
+
+.gridDiv.gridReverse .setGridDiv .gridCol:nth-child(10),
+.gridDiv .setGridDiv .gridCol:nth-child(12) {
+    grid-row: 7/9;
+}
+
+/* .gridDiv .setGridDiv.lastTwoBig  .gridCol:nth-last-child(2), */
+.gridDiv .setGridDiv.lastTwoBig .gridCol:last-child {
+    grid-row: auto;
+}
+
+
+
+
+.gridDiv .setGridDiv.lastBig .gridCol:last-child {
+    grid-row: auto;
+    grid-column: 1/3;
+}
+
+.imageLightBoxWrapper .popupContent {
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.imageLightBoxWrapper .popupContent h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.imageLightBoxWrapper .popupContent .swiper-slide p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.zoomPopupWrapper .closed,
+.imageLightBoxWrapper .closed {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.imageLightBoxWrapper .swiper-pagination {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: "Futura Bk BT";
+    width: fit-content;
+    left: auto;
+    bottom: 4px;
+    right: 3px;
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.zoomPopupWrapper .popupContent {
+    padding: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomPopupWrapper .container {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.zoomPopupWrapper .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomBtnDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.zoomBtnDiv span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.zoomBtnDiv span:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width:1024px) and (max-width:1600px) {
+    .imageLightBoxWrapper .container {
+        /* width: 50%; */
+        max-width: 800px;
+        position: relative;
+    }
+}
+
+.noGridDiv .setGridDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.noGridDiv .gridCol {
+    height: unset !important;
+    width: calc((100% / 3) - 11px);
+}
+
+.videoDiv {
+    position: relative;
+}
+
+.videoDiv:before,
+.videoGrid .gridCol:before {
+    content: "";
+    background: url(../media/svg/play_circle.svg) no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.esgSec {
+    padding: 80px 0;
+}
+
+.socialImpactSec {
+    padding: 70px 0;
+}
+
+.recognitionSec {
+    padding: 80px 0;
+}
+
+.bodredCardGridDiv {
+    margin-top: 15px;
+}
+
+.bodredCardGridDiv .bodredCardDiv {
+    /* border: 0.5px solid #9D7F19; */
+    padding: 0 40px;
+    width: calc(100% / 4);
+    position: relative;
+    margin-top: 40px;
+    height: unset;
+}
+
+.bodredCardGridDiv .bodredCardDiv:before {
+    content: "";
+    background: rgba(157, 127, 25, 0.5);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.bodredCardGridDiv .bodredCardDiv:first-child:before {
+    opacity: 0;
+}
+
+.bodredCardGridDiv .bodredCardDiv img {
+    width: 100%;
+    height: 75px;
+    object-fit: contain;
+    object-position: left;
+    filter: grayscale(1);
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodredCardGridDiv .bodredCardDiv:hover img {
+    filter: grayscale(0);
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodredCardGridDiv .bodredCardDiv img {
+    margin-top: 40px;
+}
+
+.bodredCardGridDiv .bodredCardDiv h4 {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 20px;
+    line-height: 20px;
+    color: #9D7F19;
+}
+
+.blogCard .blogImgDiv {
+    position: relative;
+}
+
+.blogCard .blogImgDiv img {
+    width: 100%;
+}
+
+.blogCard .blogImgDiv .blogCat {
+    min-height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+    font-family: 'Futura Bk BT';
+    font-size: 12px;
+    color: #9D7F19;
+    background: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.blogCard .blogContentDiv {
+    padding: 15px 20px 25px 20px;
+    border: 0.5px solid #9D7F19;
+    border-top: 0;
+}
+
+.blogCard .blogContentDiv .date {
+    font-family: 'Futura Bk BT';
+    font-size: 12px;
+    text-align: left;
+    color: rgba(49, 49, 49, 0.5);
+}
+
+.blogCard .blogContentDiv h5 {
+    font-family: 'Cormorant Garamond Medium';
+    font-size: 20px;
+    line-height: 28px;
+    color: #313131;
+    margin-top: 10px;
+}
+
+.blogCard .blogContentDiv p {
+    margin-top: 10px;
+}
+
+.blogCard .blogContentDiv .goldenLineBtn {
+    margin-top: 20px;
+}
+
+.contactUsSec {
+    padding: 80px 0;
+}
+
+.contactInfoList li {
+    text-align: center;
+    margin-top: 65px;
+    position: relative;
+}
+
+.contactInfoList li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(157, 127, 25, 0.5);
+    height: 40px;
+    width: 1px;
+
+}
+
+.contactInfoList li:nth-child(4n+4):before {
+    opacity: 0;
+}
+
+.contactInfoList h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #9D7F19;
+    margin-bottom: 16px;
+}
+
+.contactInfoList a {
+    font-family: 'Futura Bk BT';
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.getInTouchForm {
+    padding: 65px 100px;
+    margin: 80px 0 0 0;
+}
+
+.getInTouchForm .ContentText p {
+    color: #313131;
+}
+
+form {
+    margin: 0 -20px;
+}
+
+.formControls {
+    position: relative;
+    border-bottom: 0.5px solid #000000;
+    padding: 8px;
+    width: calc((100% / 3) - 40px);
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0 20px;
+}
+
+.formControls small,
+.formControls label {
+    font-family: "Futura Bk BT";
+    font-size: 12px;
+    text-align: left;
+    color: #6D6E70;
+    position: absolute;
+    left: 8px;
+    bottom: 11px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControls input:focus~label,
+.formControls.active label {
+    bottom: 35px;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    left: 8px;
+}
+
+.formControls small {
+    position: static;
+}
+
+.formControls small~label {
+    left: 40px;
+}
+
+.formControls small~input {
+    padding-left: 10px;
+}
+
+.formControls input {
+    border: 0;
+    outline: none;
+    font-family: "Futura Bk BT";
+    font-size: 14px;
+    text-align: left;
+    color: #313131;
+    background: transparent;
+    width: 100%;
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    position: relative;
+    z-index: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formControls .dropDownDiv {
+    width: 100%;
+}
+
+.formControls .dropDownDiv span {
+    min-height: 18px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    color: #313131;
+}
+
+.formControls .dropDownDiv .dropList {
+    width: 100%;
+    z-index: 2;
+}
+
+.formControls .dropDownDiv .dropList label {
+    position: static;
+}
+
+.enquirePopupWrapper .getInTouchForm {
+    padding: 40px 55px;
+    min-width: 450px;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.enquirePopupWrapper.active .popupContent .getInTouchForm {
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: translateX(-450px);
+
+}
+
+.formControlsCheck label {
+    padding-left: 25px;
+    font-family: "Futura Bk BT";
+    font-size: 12px;
+    text-align: left;
+    color: #6D6E70;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.formControlsCheck label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #9D7F19
+}
+
+.formControlsCheck label:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    background: #9D7F19;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControlsCheck input:checked~label:after {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.formControlsCheck input {
+    position: absolute;
+    display: none;
+}
+
+.enquirePopupWrapper .popupContent {
+    display: flex;
+    width: 450px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.enquirePopupWrapper .formControls {
+    width: 100%;
+    margin: 0;
+}
+
+.enquirePopupWrapper .formControlsCheck {
+    width: 100%;
+}
+
+.enquirePopupWrapper .headingH1 a {
+    color: #313131;
+    font-size: 14px;
+    font-family: 'Futura Bk BT';
+    line-height: 20px;
+    padding-left: 22px;
+    background: url(../media/svg/call.svg) center left no-repeat;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(1%) hue-rotate(194deg) brightness(93%) contrast(92%);
+    background-size: 13%;
+}
+
+.enquirePopupWrapper .nextSlide {
+    /* position: absolute;
+    top: 0; */
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.enquirePopupWrapper .nextSlide .formControls {
+    background: url(../media/svg/otpbg.png) center bottom no-repeat;
+}
+
+.enquirePopupWrapper .nextSlide .formControls input {
+    font-size: 2rem;
+    letter-spacing: 55px;
+    padding: 0 26px;
+}
+
+.enquirePopupWrapper .nextSlide .prevArrowBtn {
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7px;
+    filter: brightness(0) saturate(100%) invert(47%) sepia(17%) saturate(2658%) hue-rotate(14deg) brightness(99%) contrast(80%);
+}
+
+.sec404 {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec404 img {
+    margin: 0 auto;
+}
+
+.sec404 .content404 {
+    margin-top: -80px;
+}
+
+.sec404 .content404 h1 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 90px;
+    line-height: 109px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9D7F19;
+}
+
+.sec404 .content404 h5 {
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9D7F19;
+}
+
+.sec404 .content404 p {
+    margin: 4px 0 30px 0;
+}
+
+.ourPrideSec .ourPrideSliderDiv .swiper-wrapper {
+    padding-bottom: 30px;
+}
+
+.categoryDiv {
+    padding: 0 0 80px 0;
+}
+
+.categoryDiv .swiper-wrapper {
+    padding: 5px 0 30px 0;
+}
+
+.categoryDiv .swiper-slide {
+    margin: 20px 8px !important;
+    width: 280px;
+}
+
+.categoryDiv .swiper-slide:first-child {
+    margin-left: 90px !important;
+}
+
+.categoryDiv .swiper-slide:last-child {
+    margin-right: 90px !important;
+}
+
+.typologySec {
+    padding-top: 55px;
+}
+
+.typologySec .typologyContent h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+}
+
+.typologySec .typologyContent ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 25px;
+    gap: 5px 16px;
+}
+
+.typologySec .typologyContent ul li {
+    position: relative;
+}
+
+.typologySec .typologyContent ul li:before {
+    content: "|";
+    position: absolute;
+    right: -8px;
+    color: #6d6e70;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.typologySec .typologyContent ul li:last-child:before {
+    content: "";
+}
+
+.typologySec .typologyContent ul li a {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.typologySec .typologyContent ul li a:hover {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.investorKeyFacts .projectsDiv {
+    width: 50%;
+}
+
+.investorKeyFacts .projectsDiv ul li {
+    align-items: center;
+}
+
+.investorKeyFacts .projectsDiv ul li span {
+    width: 300px;
+    margin-right: 40px;
+    justify-content: flex-end;
+}
+
+.investorKeyFacts .investorTextImgDiv {
+    width: 50%;
+}
+
+.investorKeyFacts .investorTextImgDiv p {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 35px;
+    text-align: left;
+    color: #6D6E70;
+    margin-top: 4px;
+}
+
+.investorKeyFacts .investorTextImgDiv img {
+    width: 100%;
+}
+
+.presentationSec {
+    padding: 80px 0;
+}
+
+.presentationSec .countDiv {
+    background: #313131;
+    padding: 28px 90px;
+}
+
+.presentationSec .countDiv h6 {
+    font-family: 'Futura Md BT';
+    font-size: 24px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.presentationSec .countDiv p {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.presentationSec .countDiv h2 {
+    font-family: 'Futura Md BT';
+    font-size: 40px;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 12px;
+    color: #fff;
+}
+
+.presentationSec .countDiv h2 sub {
+    font-size: 14px;
+}
+
+.presentationSec .countDiv h3 {
+    font-family: 'Futura Md BT';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    color: #9CC863;
+}
+
+.presentationSec .countDiv small {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+}
+
+.contactList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contactList li {
+    width: 100%;
+    border-bottom: 1px solid #6D6E70;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.contactList li h6 {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #9D7F19;
+    min-width: 400px;
+}
+
+.contactList li a {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #6D6E70;
+    min-width: 300px;
+    display: inline-flex;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contactList li a:hover {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #313131;
+}
+
+.financialSec {
+    padding: 45px 0 0 0;
+}
+
+
+
+.yearDropDiv h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.yearDropDiv .dropDownDiv {
+    min-width: 100px;
+    margin-left: 35px;
+}
+
+.viewList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.5);
+    min-height: 70px;
+    flex-wrap: wrap;
+}
+
+.viewList li:last-child {
+    border: 0;
+}
+
+.viewList li p {
+    width: calc(100% - 350px);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.viewList li:hover p {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.viewList li audio {
+    width: 315px;
+    height: 40px;
+}
+
+.directorList li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.2);
+    flex-wrap: wrap;
+}
+
+.directorList li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: #313131;
+}
+
+.directorList li:first-child span,
+.directorList li span:last-child {
+    font-family: 'Futura Bk BT';
+}
+
+.cardSliderDesk .ContentText {
+    margin-top: 20px;
+}
+
+.normalTextImgSlider .ContentText h5 {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.cardSliderDesk .ContentText p {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 100%;
+}
+
+.cardSliderDesk .swiper-wrapper {
+    gap: 40px 65px;
+}
+
+.cardSliderDesk .swiper-wrapper .swiper-slide {
+    width: calc((100% / 3) - 44px);
+    margin: 0 !important;
+}
+
+.listNewsDiv .projectFilterDiv {
+    margin-top: 40px;
+}
+
+.listNewsDiv .listNewsFilterDiv {
+    position: relative;
+    z-index: 1;
+}
+
+.listNewsDiv .listNewsFilterDiv p {
+    font-family: 'Futura Bk BT';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.listNewsDiv .listNewsFilterDiv .dropDownDiv {
+    min-width: 90px;
+    margin-left: 30px;
+}
+
+.listNewsDiv .listNewsFilterDiv>div {
+    margin-right: 60px;
+}
+
+.listingDiv .listingImgTextDiv {
+    padding: 22px 10px;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.5);
+    transition: all 300ms linear;
+    background: #fff;
+    position: relative;
+}
+
+.listingDiv .listingImgTextDiv:hover {
+    transition: all 300ms linear;
+    box-shadow: rgba(109, 110, 112, 0.5) 0px 25px 20px -20px;
+    z-index: 1;
+    transform: translateY(-3px);
+}
+
+
+.listingDiv .listingImgTextDiv .listingImgDiv {
+    width: 150px;
+}
+
+.listingDiv .listingImgTextDiv .listingImgDiv img {
+    width: 100%;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv {
+    width: calc(100% - 150px);
+    padding: 10px 25px;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv span {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv span small {
+    color: #6D6E70;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv h3 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+    margin-top: 16px;
+}
+
+.listNewsDetailsDiv h3 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+    margin-top: 40px;
+}
+
+.listNewsDetailsDiv .date {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    display: flex;
+    margin-top: 16px;
+}
+
+.listNewsDetailsDiv p {
+    margin-top: 20px;
+}
+
+.newsPressDiv {
+    gap: 60px 16px;
+}
+
+.newsPressDiv .newsDiv {
+    width: calc(50% - 8px);
+}
+
+.newsPressDiv .newsDiv h4 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.newsPressDiv .newsDiv p {
+    margin-top: 8px;
+}
+
+.newsPressDiv .newsDiv .newsImgDiv {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.newsPressDiv .newsDiv .newsImgDiv img {
+    width: 100%;
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .newsDiv:hover .newsImgDiv img {
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.newsPressDiv .pressDiv {
+    padding: 32px 30px;
+    background: #FFFBEC;
+}
+
+.newsPressDiv .pressDiv ul li {
+    padding: 14px 10px;
+    border-top: 1px solid rgba(109, 110, 112, 0.5);
+}
+
+.newsPressDiv .pressDiv ul li:first-child {
+    border: 0;
+}
+
+.newsPressDiv .pressDiv ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .pressDiv ul li:hover a {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .pressDiv ul li a span {
+    display: flex;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.termsConditionContentDiv {
+    margin-top: 40px;
+}
+
+.termsConditionContentDiv h3,
+.termsConditionContentDiv h4 {
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #313131;
+    margin-top: 30px;
+}
+
+.termsConditionContentDiv p {
+    line-height: 22px;
+}
+
+.termsConditionContentDiv a {
+    text-decoration: underline;
+}
+
+.siteMapContentDiv h5 {
+    margin-top: 40px;
+}
+
+.siteMapContentDiv h5 a {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+}
+
+.siteMapContentDiv ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+}
+
+.siteMapContentDiv ul li a:hover {
+    color: #313131;
+}
+
+.siteMapContentDiv ul li {
+    margin-top: 16px;
+}
+
+.siteMapContentDiv ul li a.active {
+    font-family: 'Futura Hv BT';
+}
+
+.siteMapContentDiv>div>div {
+    width: calc(100% / 3);
+}
+
+.logoSliderDiv .swiper-wrapper {
+    flex-direction: unset !important;
+
+}
+
+.logoSliderDiv .swiper-slide {
+    height: 100px !important;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.logoSliderDiv .swiper-slide img {
+    filter: grayscale(1);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoSliderDiv .swiper-slide:hover img {
+    filter: grayscale(0);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.iconTextList {
+    margin-top: 70px;
+}
+
+.iconTextList ul {
+    gap: 80px 40px;
+}
+
+.iconTextList ul li {
+    text-align: center;
+    width: calc((100% / 5) - 70px);
+}
+
+.iconTextList ul li img {
+    margin: 0 auto;
+}
+
+.iconTextList ul li p {
+    margin-top: 20px;
+}
+
+.headingPraCardDiv {
+    gap: 24px;
+}
+
+.headingPraCardDiv .headingPraCard {
+    background: #FFFBEC;
+    padding: 50px 25px;
+    width: calc((100% / 3) - 16px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingPraCardDiv .headingPraCard h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 20px;
+}
+
+.headingPraCardDiv .headingPraCard p {
+    margin-top: 24px;
+}
+
+.peopleSec .ourPromiseSec .container {
+    padding: 0 80px;
+}
+
+.peopleSec .ourPromiseSec .headingH1 {
+    color: #9D7F19;
+    font-size: 20px;
+}
+
+.peopleSec .ourPromiseSec h5 {
+    font-family: 'Futura Hv BT';
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: #6D6E70;
+}
+
+.peopleSec .ourPromiseSec h5 span {
+    font-family: 'Futura Bk BT';
+}
+
+.peopleSec .ourPromiseSec .ourPromiseTextDiv {
+    padding: 0 80px;
+}
+
+.careerExpSec .projectSearchDiv {
+    width: 500px;
+}
+
+.expCardList {
+    gap: 20px 16px;
+}
+
+.expCardList .expCard {
+    border: 1px solid rgba(109, 110, 112, 0.1);
+    width: calc((100% / 3) - 11px);
+}
+
+.expCardList .expCard .expHeadingDiv {
+    background: #FFFBEC;
+    padding: 25px 20px;
+}
+
+.expCardList .expCard .expHeadingDiv h4 {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 24px;
+    line-height: 20px;
+    color: #9D7F19;
+}
+
+.expCardList .expCard .expHeadingDiv h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+    margin-top: 8px;
+}
+
+.expCardList .expCard .expContentDiv {
+    padding: 0px 20px 25px 20px;
+}
+
+.expCardList .expCard .expContentDiv p {
+    padding: 17px 0;
+    border-top: 1.2px solid rgba(109, 110, 112, 0.2);
+}
+
+.expCardList .expCard .expContentDiv p:first-child {
+    border-top: 0;
+}
+
+.expCardList .expCard .expContentDiv p span {
+    color: #9D7F19;
+    text-decoration: underline;
+}
+
+.expCardList .expCard .expContentDiv small {
+    font-family: 'Futura Hv BT';
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.expCardList .expCard .expContentDiv ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.expCardList .expCard .expContentDiv ul li {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 20px;
+    color: #6D6E70;
+}
+
+.expCardList .expCard .expContentDiv .goldenBorderBtn {
+    margin-top: 30px;
+}
+
+.imgWithExpandContentList .imgWithWxpandContentCard {
+    background: #FFFBEC;
+    width: calc((100% / 2) - 8px);
+}
+
+.imgWithExpandContentList .imgWithWxpandContentCard .expandContentDiv {
+    padding: 20px;
+}
+
+.commercialFilterDiv {
+    background: #F6F6F6;
+    margin-top: -30px !important;
+    position: relative;
+    z-index: 9;
+}
+
+.commercialFilterDiv .dropDownDiv>span {
+    min-height: 60px;
+    padding: 20px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.commercialFilterDiv .dropDownDiv {
+    width: calc(100% / 3);
+    border-right: 1px solid rgba(157, 127, 25, 0.5);
+}
+
+.commercialFilterDiv .dropDownDiv:last-child {
+    border: 0;
+}
+
+.commercialFilterDiv .dropDownDiv span:before {
+    right: 20px;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(10%) saturate(4391%) hue-rotate(14deg) brightness(103%) contrast(80%);
+}
+
+.commercialFilterDiv .searchBtn {
+    width: 60px;
+    height: 60px;
+    background: #9D7F19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.commercialFilterDiv .searchBtn:hover {
+    background: #7d6410;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.commercialFilterDiv .searchBtn img {
+    width: 21px;
+    height: 21px;
+}
+
+.commercialFilterDiv .listDiv {
+    width: calc(100% - 60px);
+    gap: 0;
+}
+
+.commercialFilterDiv .dropDownDiv .dropList {
+    width: 100%;
+}

@@ -88,34 +88,48 @@
                                                                     Lodha Evoq
                                                                 </a>
                                                             </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"
+                                                                    class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                    data-more="View all">
+                                                                    View all
+                                                                </a>
+                                                            </li>
                                                         </ul>
+
                                                     </div>
                                                     <div class="innerLinksUl">
                                                         <h6>Commercial</h6>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0);" data-location="Lorem">
+                                                                <a href="javascript:void(0);" data-location="">
                                                                     Offices
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);"
-                                                                    data-location="Lorem ipsum">
+                                                                <a href="javascript:void(0);" data-location="">
                                                                     Retail
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);" data-location="Lorem">
+                                                                <a href="javascript:void(0);" data-location="">
                                                                     Warehousing
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);"
-                                                                    data-location="Lorem ipsum">
+                                                                <a href="javascript:void(0);" data-location="">
                                                                     Plots
                                                                 </a>
                                                             </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"
+                                                                    class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                    data-more="View all">
+                                                                    View all
+                                                                </a>
+                                                            </li>
                                                         </ul>
+
                                                     </div>
                                                     <div class="innerSearchDiv">
                                                         <div class="searchDiv">
@@ -298,7 +312,7 @@
                                                             <ul class="normalText">
                                                                 <li>
                                                                     <a href="javascript:void(0);">
-                                                                        All Projects
+                                                                        About Us
                                                                     </a>
                                                                 </li>
                                                                 <li>
@@ -308,12 +322,17 @@
                                                                 </li>
                                                                 <li>
                                                                     <a href="javascript:void(0);">
-                                                                        Investors
+                                                                        All Projects
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="javascript:void(0);">
-                                                                        Contact
+                                                                        Investor Relations
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        Blogs
                                                                     </a>
                                                                 </li>
                                                             </ul>
@@ -678,24 +697,34 @@
     </header>
     <main>
         <section class="spotlightBanner">
+            <picture>
+                <source media="(min-width:767px)" srcset="assets/media/home/placeholderBanner.webp">
+                <img src="assets/media/home/placeholderBannerMob.webp" alt="Banner"
+                    class="img-fluid placeholderBannerImg">
+            </picture>
             <div class="swiper spotlightSliderDiv spotlightSliderActive">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="bannerImgDiv">
+                        <div class="bannerImgDiv iframeDiv">
                             <!-- <picture>
                                 <source media="(min-width:767px)" srcset="assets/media/home/banner.webp">
                                 <img src="assets/media/home/banner.webp" alt="Banner" class="img-fluid bannerImg">
                             </picture> -->
-                            <video data-video-desktop="assets/media/home/banner.mov"
+                            <!-- <video data-video-desktop="assets/media/home/banner.mov"
                                 data-video-mobile="assets/media/home/banner.mov" class="bannerImg img-fluid" poster=""
                                 data-poster-desktop="assets/media/home/banner.webp"
                                 data-poster-mobile="assets/media/home/spotlight-mobile.png" loop preload playsinline
-                                webkit-playsinline mute autoplay data-aos="fade"></video>
-                            <div class="spotLightContent container" data-aos="fade-up" data-aos-delay="900">
+                                webkit-playsinline mute autoplay data-aos="fade"></video> -->
+                            <iframe class="bannerImg img-fluid" data-aos="fade"
+                                src="https://www.youtube.com/embed/aKFGwKauZiA?si=bZCpdmwjcpG62vLt&autoplay=1&mute=1&loop=1&controls=0&rel=0&playlist=aKFGwKauZiA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <div class="spotLightContent container" data-aos="fade-up" data-aos-delay="900">
                                 <h1 class="mainHeading">
                                     Lodha Finest Developments Lodha
                                 </h1>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -751,19 +780,24 @@
             </div>
             <div class="ourPurposeImgDiv d-flex justify-content-between align-item-center">
                 <div class="imgDiv">
-                    <picture>
-                        <source media="(min-width:767px)" srcset="assets/media/home/OurStory.png">
-                        <img src="assets/media/home/ourStoryMobile.png" alt="Banner" class="img-fluid " data-aos="fade">
-                    </picture>
-                    <a href="javascript:void(0);" class="underlineArrowBtn">Our Story</a>
+                    <a href="javascript:void(0);">
+                        <picture>
+                            <source media="(min-width:767px)" srcset="assets/media/home/OurStory.png">
+                            <img src="assets/media/home/ourStoryMobile.png" alt="Banner" class="img-fluid "
+                                data-aos="fade">
+                        </picture>
+                        <span class="underlineArrowBtn">Our Story</span>
+                    </a>
                 </div>
                 <div class="imgDiv">
-                    <picture>
-                        <source media="(min-width:767px)" srcset="assets/media/home/OurImpact.png">
-                        <img src="assets/media/home/ourImpactMobile.png" alt="Banner" class="img-fluid "
-                            data-aos="fade">
-                    </picture>
-                    <a href="javascript:void(0);" class="underlineArrowBtn">Our Impact</a>
+                    <a href="javascript:void(0);">
+                        <picture>
+                            <source media="(min-width:767px)" srcset="assets/media/home/OurImpact.png">
+                            <img src="assets/media/home/ourImpactMobile.png" alt="Banner" class="img-fluid "
+                                data-aos="fade">
+                        </picture>
+                        <span class="underlineArrowBtn">Our Impact</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -778,7 +812,7 @@
                 </div>
             </div>
 
-            <div class="swiper ourPrideSliderDiv ourPrideSliderActive">
+            <div class="swiper ourPrideSliderDiv ourPrideSliderActive deskCenterLimitedSlides">
 
                 <div class="swiper-wrapper">
 
@@ -826,7 +860,7 @@
                             <p>Lodha World Towers</p>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <a href="javascript:void(0);" data-aos="fade-up" data-aos-delay="700">
                             <div class="ourPrideImgDiv">
                                 <picture>
@@ -869,7 +903,7 @@
                             </div>
                             <p>Lodha World Towers</p>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -878,7 +912,7 @@
                     <div class="swiperBtnDiv d-flex justify-content-center align-item-center col-12">
                         <div class="swiper-button-prev swiper-button mNone swiper-button-static-bottom"></div>
                         <div class="swiper-button-next swiper-button mNone swiper-button-static-bottom"></div>
-                        <div class="swiper-pagination dNone"></div>
+                        <div class="swiper-pagination dNone mt-2"></div>
                     </div>
                     <a href="javascript:void(0);" class="goldenBorderBtn">
                         View All Projects
@@ -946,7 +980,7 @@
     <footer>
         <div class="mainFooterMenu">
             <div class="container">
-                <div class="row d-flex align-item-start justify-content-between">
+                <div class="row d-flex align-item-center justify-content-between">
                     <div class="footerLinksWrapper d-flex align-item-start justify-content-start">
                         <div class="footerLinksDiv">
                             <ul>
@@ -1021,12 +1055,12 @@
                         <a href="/" class="footerLogo">
                             <img src="assets/media/svg/logo.svg" alt="Lodha" class="img-fluid">
                         </a>
-                        <p>
+                        <!-- <p class="opacity0">
                             LODHA Excelus Building, Apollo Mills Compound NM Joshi Marg, Mahalaxmi, Mumbai - 400 011<br>
                             <a href="tel:+91 (22) 67737373">+91 (22) 67737373</a>
-                        </p>
+                        </p> -->
 
-                        <ul class="d-flex justify-content-start align-item-center">
+                        <ul class="d-flex justify-content-start align-item-center mt-3">
                             <li>
                                 <a href="javascript:void(0);">
                                     <img src="assets/media/svg/facebook.svg" alt="Facebook" class="img-fluid">

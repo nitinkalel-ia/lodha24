@@ -1,3 +1,10 @@
+.spotlightBanner .placeholderBannerImg {
+    position: absolute;
+    z-index: -99;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .spotlightSliderDiv .swiper-slide {
     position: relative;
 }
@@ -15,8 +22,22 @@
 
 .spotlightSliderDiv .swiper-slide .bannerImgDiv .bannerImg {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
+}
+
+.spotlightSliderDiv .swiper-slide .iframeDiv {
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+}
+
+.spotlightSliderDiv .swiper-slide .iframeDiv .bannerImg {
+    object-fit: cover;
+    width: 300%;
+    height: 100%;
+    max-width: none;
+    margin-left: -100%;
 }
 
 .spotlightSliderDiv .swiper-slide .spotLightContent {
@@ -126,6 +147,10 @@
 .ourPrideSliderDiv .swiper-slide img {
     width: 100%;
     transition: all 3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.bodDiv .swiper-slide img {
+    filter: grayscale(1);
 }
 
 .ourPrideSliderDiv .swiper-slide .ourPrideImgDiv {
@@ -494,6 +519,7 @@
 
 .projctsDiv {
     padding: 80px 0;
+    background: #fff;
 }
 
 .projctsDiv .projectSearchDiv {
@@ -561,11 +587,14 @@
 .cardDiv {
     position: relative;
     display: inline-flex;
+    flex-wrap: wrap;
     width: 100%;
+    z-index: 1;
+    transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .cardDiv:before {
-    content: '';
+    /* content: ''; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -583,13 +612,108 @@
 }
 
 .cardDiv h6 {
-    color: #FFF;
-    font-family: 'Cormorant Garamond Medium';
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    color: #6D6E70;
+    font-family: "Futura Md BT";
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.hoverCard {
+    position: relative;
+    -webkit-transition: 0.8s;
+    -webkit-transform-style: preserve-3d;
+    display: flex;
+    width: 100%;
+}
+
+
+.hoverDiv {
+    border: 1px solid #9D7F19;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hoverDiv a {
+    padding: 25px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .hoverCard,
+.hoverCard .front,
+.hoverCard .back, */
+.hoverCard img {
+    height: 342px;
+}
+
+/* .front, */
+.back {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.filterSliderDiv .swiper-wrapper {
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.filterSliderDiv .swiper-slide {
+    -webkit-perspective: 1000;
+    background: transparent;
+    margin: 15px 10px;
+    width: calc((100% / 4) - 19px);
+}
+
+.filterSliderDiv .swiper-slide:nth-child(4n + 4) {
+    margin-right: 1px;
+}
+
+.filterSliderDiv .swiper-slide:first-child,
+.filterSliderDiv .swiper-slide:nth-child(5n + 5) {
+    margin-left: 1px;
+}
+
+/* .filterSliderDiv .swiper-slide:hover .hoverCard,
+.filterSliderDiv .swiper-slide.hover .flhoverCardipper {
+    -webkit-transform: rotateY(-180deg);
+} */
+
+/* back, initially hidden */
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    background: #fff;
+}
+
+
+.hoverDiv ul li {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    margin-bottom: 7px;
 }
 
 .featuredProjectSec {
@@ -612,7 +736,7 @@
     margin-top: 32px;
 }
 
-.lifeStyleSec .textListDiv .listDiv ul li {
+.lifeStyleSec .textListDiv .listDiv ul li>div {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 15px;
@@ -629,12 +753,15 @@
 .lifeStyleSec .textListDiv .listDiv ul li p {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: calc(100% - 20px);
 }
 
 .lifeStyleSec .textListDiv .listDiv ul li p strong {
     font-weight: 700;
+    display: flex;
+    min-width: 100px;
+    justify-content: flex-end;
+    white-space: nowrap;
 }
 
 .possDate {
@@ -665,10 +792,11 @@
 }
 
 .normalTextImgSlider .swiper-slide p {
-    text-align: center;
-    margin: 0 auto;
+    /* text-align: center;
+    margin: 0 auto; */
     max-width: 260px;
-    margin-top: 16px;
+    max-width: 100%;
+    margin-top: 16px !important;
 }
 
 
@@ -693,6 +821,10 @@
 .secodaryNav ul li {
     width: auto;
     margin-right: 40px;
+}
+
+.secodaryNav ul li:last-child {
+    margin-right: 0;
 }
 
 .secodaryNav ul li a {
@@ -740,12 +872,25 @@
 
 .planSec .tabWrapper .planSlider .swiper-wrapper {
     padding: 30px 0;
+    background: #fff;
+    /* transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important; */
 }
 
 .planSec .tabWrapper .planSlider .swiper-slide {
     margin-right: 30px;
     width: 288px;
     cursor: pointer;
+    pointer-events: unset;
+}
+
+.planSec .tabWrapper .tabData {
+    opacity: 0 !important;
+    /* visibility: hidden !important; */
+}
+
+.planSec .tabWrapper .tabData.swiper-slide-active {
+    opacity: 1 !important;
+    /* visibility: visible !important; */
 }
 
 .planSec .tabWrapper .planSlider .swiper-slide:last-child {
@@ -891,7 +1036,7 @@
 }
 
 .reraSec p {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .reraSec p a {
@@ -939,7 +1084,8 @@
 
 .bodWrapper .bodImg {
     width: 300px;
-    height: 300px
+    /* height: 300px; */
+    filter: grayscale(1);
 }
 
 .bodWrapper .popupContent {
@@ -1080,6 +1226,10 @@
     padding: 30px 0 80px 0;
 }
 
+.amenitieSliderDiv {
+    margin: 0 auto;
+}
+
 .amenitiesSec img {
     margin-top: 30px;
     width: 100%;
@@ -1087,6 +1237,10 @@
 
 .amenitiesSec .row {
     padding: 50px;
+}
+
+.amenitiesSec .row .col-3 {
+    padding-right: 20px;
 }
 
 .amenitiesSec .row h6 {
@@ -1259,6 +1413,7 @@
 .imageLightBoxWrapper .popupContent {
     padding: 0;
     background: transparent;
+    width: 100%;
 }
 
 .imageLightBoxWrapper .popupContent h5 {
@@ -1289,6 +1444,7 @@
     margin-top: 10px;
 }
 
+.zoomPopupWrapper .closed,
 .imageLightBoxWrapper .closed {
     position: absolute;
     top: 30px;
@@ -1305,10 +1461,67 @@
     left: auto;
     bottom: 4px;
     right: 3px;
-    letter-spacing: -1.5px;
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-@media screen and (min-width:1024px) and (max-width:1600px) {
+.zoomPopupWrapper .popupContent {
+    padding: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomPopupWrapper .container {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.zoomPopupWrapper .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomBtnDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.zoomBtnDiv span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.zoomBtnDiv span:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width:1024px) {
     .imageLightBoxWrapper .container {
         /* width: 50%; */
         max-width: 800px;
@@ -1327,6 +1540,11 @@
     width: calc((100% / 3) - 11px);
 }
 
+.videoDiv {
+    position: relative;
+}
+
+.videoDiv:before,
 .videoGrid .gridCol:before {
     content: "";
     background: url(../media/svg/play_circle.svg) no-repeat center center;
@@ -1338,6 +1556,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .esgSec {
@@ -1357,8 +1576,28 @@
 }
 
 .bodredCardGridDiv .bodredCardDiv {
-    border: 0.5px solid #9D7F19;
-    padding: 40px;
+    /* border: 0.5px solid #9D7F19; */
+    padding: 0 40px;
+    width: calc(100% / 4);
+    position: relative;
+    margin-top: 40px;
+    height: unset;
+}
+
+.bodredCardGridDiv .bodredCardDiv:before {
+    content: "";
+    background: rgba(157, 127, 25, 0.5);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.bodredCardGridDiv .bodredCardDiv:first-child:before {
+    opacity: 0;
 }
 
 .bodredCardGridDiv .bodredCardDiv img {
@@ -1375,8 +1614,15 @@
     transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
 }
 
-.bodredCardGridDiv .bodredCardDiv p {
+.bodredCardGridDiv .bodredCardDiv img {
     margin-top: 40px;
+}
+
+.bodredCardGridDiv .bodredCardDiv h4 {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 20px;
+    line-height: 20px;
+    color: #9D7F19;
 }
 
 .blogCard .blogImgDiv {
@@ -1492,7 +1738,7 @@ form {
     width: calc((100% / 3) - 40px);
     display: flex;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 30px;
     margin: 0 20px;
 }
 
@@ -1574,7 +1820,7 @@ input::-webkit-inner-spin-button {
 }
 
 .enquirePopupWrapper .getInTouchForm {
-    padding: 65px 70px;
+    padding: 40px 55px;
     min-width: 450px;
     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
@@ -1640,6 +1886,21 @@ input::-webkit-inner-spin-button {
 .enquirePopupWrapper .formControls {
     width: 100%;
     margin: 0;
+}
+
+.enquirePopupWrapper .formControlsCheck {
+    width: 100%;
+}
+
+.enquirePopupWrapper .headingH1 a {
+    color: #313131;
+    font-size: 14px;
+    font-family: 'Futura Bk BT';
+    line-height: 20px;
+    padding-left: 22px;
+    background: url(../media/svg/call.svg) center left no-repeat;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(1%) hue-rotate(194deg) brightness(93%) contrast(92%);
+    background-size: 13%;
 }
 
 .enquirePopupWrapper .nextSlide {
@@ -1709,27 +1970,805 @@ input::-webkit-inner-spin-button {
     margin: 4px 0 30px 0;
 }
 
-/* suraj */
 .ourPrideSec .ourPrideSliderDiv .swiper-wrapper {
     padding-bottom: 30px;
 }
 
-/* .secodaryNav{
-    position: fixed;
+.categoryDiv {
+    padding: 0 0 80px 0;
+}
+
+.categoryDiv .swiper-wrapper {
+    padding: 5px 0 30px 0;
+}
+
+.categoryDiv .swiper-slide {
+    margin: 20px 8px !important;
+    width: 280px;
+}
+
+.categoryDiv .swiper-slide:first-child {
+    margin-left: 90px !important;
+}
+
+.categoryDiv .swiper-slide:last-child {
+    margin-right: 90px !important;
+}
+
+.typologySec {
+    padding-top: 55px;
+}
+
+.typologySec .typologyContent h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+}
+
+.typologySec .typologyContent ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 25px;
+    gap: 5px 16px;
+}
+
+.typologySec .typologyContent ul li {
+    position: relative;
+}
+
+.typologySec .typologyContent ul li:before {
+    content: "|";
+    position: absolute;
+    right: -8px;
+    color: #6d6e70;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.typologySec .typologyContent ul li:last-child:before {
+    content: "";
+}
+
+.typologySec .typologyContent ul li a {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.typologySec .typologyContent ul li a:hover {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.investorKeyFacts .projectsDiv {
+    width: 50%;
+}
+
+.investorKeyFacts .projectsDiv ul li {
+    align-items: center;
+}
+
+.investorKeyFacts .projectsDiv ul li span {
+    width: 300px;
+    margin-right: 40px;
+    justify-content: flex-end;
+}
+
+.investorKeyFacts .investorTextImgDiv {
+    width: 50%;
+}
+
+.investorKeyFacts .investorTextImgDiv p {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 35px;
+    text-align: left;
+    color: #6D6E70;
+    margin-top: 4px;
+}
+
+.investorKeyFacts .investorTextImgDiv img {
     width: 100%;
 }
-.priceSec {
-    padding: 140px 0 100px 0;
+
+.presentationSec {
+    padding: 80px 0;
 }
 
-.planSec.plansPadding{
-    padding: 110px 0 50px 0 !important;
+.presentationSec .countDiv {
+    background: #313131;
+    padding: 28px 90px;
 }
 
-.locationSec {
-    padding: 110px 0 25px 0;
+.presentationSec .countDiv h6 {
+    font-family: 'Futura Md BT';
+    font-size: 24px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+    margin-top: 30px;
 }
-.amenitiesSec {
-    padding: 90px 0 80px 0;
-} */
-/* suraj */
+
+.presentationSec .countDiv p {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.presentationSec .countDiv h2 {
+    font-family: 'Futura Md BT';
+    font-size: 40px;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 12px;
+    color: #fff;
+}
+
+.presentationSec .countDiv h2 sub {
+    font-size: 14px;
+}
+
+.presentationSec .countDiv h3 {
+    font-family: 'Futura Md BT';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    color: #9CC863;
+}
+
+.presentationSec .countDiv small {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+}
+
+.contactList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contactList li {
+    width: 100%;
+    border-bottom: 1px solid #6D6E70;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.contactList li h6 {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #9D7F19;
+    min-width: 400px;
+}
+
+.contactList li a {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #6D6E70;
+    min-width: 300px;
+    display: inline-flex;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contactList li a:hover {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #313131;
+}
+
+.financialSec {
+    padding: 45px 0 0 0;
+}
+
+
+
+.yearDropDiv h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.yearDropDiv .dropDownDiv {
+    min-width: 100px;
+    margin-left: 35px;
+}
+
+.viewList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.5);
+    min-height: 70px;
+    flex-wrap: wrap;
+}
+
+.viewList li:last-child {
+    border: 0;
+}
+
+.viewList li p {
+    width: calc(100% - 350px);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.viewList li:hover p {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.viewList li audio {
+    width: 315px;
+    height: 40px;
+}
+
+.directorList li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.2);
+    flex-wrap: wrap;
+}
+
+.directorList li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: #313131;
+}
+
+.directorList li:first-child span,
+.directorList li span:last-child {
+    font-family: 'Futura Bk BT';
+}
+
+.cardSliderDesk .ContentText {
+    margin-top: 20px;
+}
+
+.normalTextImgSlider .ContentText h5 {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.cardSliderDesk .ContentText p {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 100%;
+}
+
+.cardSliderDesk .swiper-wrapper {
+    gap: 40px 65px;
+}
+
+.cardSliderDesk .swiper-wrapper .swiper-slide {
+    width: calc((100% / 3) - 44px);
+    margin: 0 !important;
+}
+
+.listNewsDiv .projectFilterDiv {
+    margin-top: 40px;
+}
+
+.listNewsDiv .listNewsFilterDiv {
+    position: relative;
+    z-index: 1;
+}
+
+.listNewsDiv .listNewsFilterDiv p {
+    font-family: 'Futura Bk BT';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.listNewsDiv .listNewsFilterDiv .dropDownDiv {
+    min-width: 90px;
+    margin-left: 30px;
+}
+
+.listNewsDiv .listNewsFilterDiv>div {
+    margin-right: 60px;
+}
+
+.listingDiv .listingImgTextDiv {
+    padding: 22px 10px;
+    border-bottom: 1px solid rgba(109, 110, 112, 0.5);
+    transition: all 300ms linear;
+    background: #fff;
+    position: relative;
+}
+
+.listingDiv .listingImgTextDiv:hover {
+    transition: all 300ms linear;
+    box-shadow: rgba(109, 110, 112, 0.5) 0px 25px 20px -20px;
+    z-index: 1;
+    transform: translateY(-3px);
+}
+
+
+.listingDiv .listingImgTextDiv .listingImgDiv {
+    width: 150px;
+}
+
+.listingDiv .listingImgTextDiv .listingImgDiv img {
+    width: 100%;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv {
+    width: calc(100% - 150px);
+    padding: 10px 100px 10px 25px;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv span {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv span small {
+    color: #6D6E70;
+}
+
+.listingDiv .listingImgTextDiv .listingTextDiv h3 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+    margin-top: 16px;
+}
+
+.listNewsDetailsDiv h3 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+    margin-top: 40px;
+}
+
+.listNewsDetailsDiv .date {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+    display: flex;
+    margin-top: 16px;
+}
+
+.listNewsDetailsDiv p {
+    margin-top: 20px;
+}
+
+.newsPressDiv {
+    gap: 60px 16px;
+}
+
+.newsPressDiv .newsDiv {
+    width: calc(50% - 8px);
+}
+
+.newsPressDiv .newsDiv h4 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #313131;
+}
+
+.newsPressDiv .newsDiv p {
+    margin-top: 8px;
+}
+
+.newsPressDiv .newsDiv .newsImgDiv {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.newsPressDiv .newsDiv .newsImgDiv img {
+    width: 100%;
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .newsDiv:hover .newsImgDiv img {
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    transform: scale(1.1);
+}
+
+.newsPressDiv .pressDiv {
+    padding: 32px 30px;
+    background: #FFFBEC;
+}
+
+.newsPressDiv .pressDiv ul li {
+    padding: 14px 10px;
+    border-top: 1px solid rgba(109, 110, 112, 0.5);
+}
+
+.newsPressDiv .pressDiv ul li:first-child {
+    border: 0;
+}
+
+.newsPressDiv .pressDiv ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: left;
+    color: #6D6E70;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .pressDiv ul li:hover a {
+    color: #313131;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.newsPressDiv .pressDiv ul li a span {
+    display: flex;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.termsConditionContentDiv {
+    margin-top: 40px;
+}
+
+.termsConditionContentDiv h3,
+.termsConditionContentDiv h4 {
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #313131;
+    margin-top: 30px;
+}
+
+.termsConditionContentDiv p {
+    line-height: 22px;
+}
+
+.termsConditionContentDiv a {
+    text-decoration: underline;
+}
+
+.siteMapContentDiv h5 {
+    margin-top: 40px;
+}
+
+.siteMapContentDiv h5 a {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+}
+
+.siteMapContentDiv ul li a {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #6D6E70;
+}
+
+.siteMapContentDiv ul li a:hover {
+    color: #313131;
+}
+
+.siteMapContentDiv ul li {
+    margin-top: 16px;
+}
+
+.siteMapContentDiv ul li a.active {
+    font-family: 'Futura Hv BT';
+}
+
+.siteMapContentDiv>div>div {
+    width: calc(100% / 3);
+}
+
+.logoSliderDiv .swiper-wrapper {
+    flex-direction: unset !important;
+
+}
+
+.logoSliderDiv .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-left: 1px solid rgba(157, 127, 25, 0.5);
+}
+
+.logoSliderDiv .swiper-slide img {
+    filter: grayscale(1);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoSliderDiv .swiper-slide:hover img {
+    filter: grayscale(0);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoSliderDiv .swiper-slide h5 {
+    font-family: 'Futura Md BT';
+    font-size: 16px;
+    line-height: 19.18px;
+    text-align: center;
+    color: #6D6E70;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoSliderDiv .swiper-slide:hover h5 {
+    color: #9D7F19;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoSliderDiv .swiper-slide:nth-child(6n+6) {
+    justify-content: flex-end;
+}
+
+.logoSliderDiv .swiper-slide:nth-child(6n+1) {
+    justify-content: flex-start;
+    border-left: 0;
+}
+
+.iconTextList {
+    margin-top: 70px;
+}
+
+.iconTextList ul {
+    /* gap: 80px 40px; */
+    width: 100%;
+}
+
+.iconTextList ul li {
+    text-align: center;
+    width: calc((100% / 5));
+    height: auto;
+    padding: 40px 0;
+}
+
+.iconTextList ul li img {
+    margin: 0 auto;
+}
+
+.iconTextList ul li p {
+    margin-top: 20px;
+}
+
+.iconTextList .hoverContent {
+    border: 1px solid rgba(157, 127, 25, 0.2);
+}
+
+.headingPraCardDiv>div {
+    gap: 24px;
+}
+
+.headingPraCardDiv .headingPraCard {
+    background: #FFFBEC;
+    padding: 50px 25px;
+    width: calc((100% / 3) - 16px);
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingPraCardDiv .headingPraCard h5 {
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 20px;
+}
+
+.headingPraCardDiv .headingPraCard p {
+    margin-top: 24px;
+}
+
+
+
+.peopleSec .ourPromiseSec .container {
+    padding: 0 80px;
+}
+
+.peopleSec .ourPromiseSec .headingH1 {
+    color: #9D7F19;
+    font-size: 20px;
+}
+
+.peopleSec .ourPromiseSec h5 {
+    font-family: 'Futura Hv BT';
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: #6D6E70;
+}
+
+.peopleSec .ourPromiseSec h5 span {
+    font-family: 'Futura Bk BT';
+}
+
+.peopleSec .ourPromiseSec .ourPromiseTextDiv {
+    padding: 0 80px;
+}
+
+.careerExpSec .projectSearchDiv {
+    width: 500px;
+}
+
+.expCardList {
+    gap: 20px 16px;
+}
+
+.expCardList .expCard {
+    border: 1px solid rgba(109, 110, 112, 0.1);
+    width: calc((100% / 3) - 11px);
+}
+
+.expCardList .expCard .expHeadingDiv {
+    background: #FFFBEC;
+    padding: 25px 20px;
+}
+
+.expCardList .expCard .expHeadingDiv h4 {
+    font-family: 'Cormorant Garamond Bold';
+    font-size: 24px;
+    line-height: 20px;
+    color: #9D7F19;
+}
+
+.expCardList .expCard .expHeadingDiv h6 {
+    font-family: 'Futura Bk BT';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #9D7F19;
+    margin-top: 8px;
+}
+
+.expCardList .expCard .expContentDiv {
+    padding: 0px 20px 25px 20px;
+}
+
+.expCardList .expCard .expContentDiv p {
+    padding: 17px 0;
+    border-top: 1.2px solid rgba(109, 110, 112, 0.2);
+}
+
+.expCardList .expCard .expContentDiv p:first-child {
+    border-top: 0;
+}
+
+.expCardList .expCard .expContentDiv p span {
+    color: #9D7F19;
+    text-decoration: underline;
+}
+
+.expCardList .expCard .expContentDiv small {
+    font-family: 'Futura Hv BT';
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.expCardList .expCard .expContentDiv ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.expCardList .expCard .expContentDiv ul li {
+    font-family: 'Futura Md BT';
+    font-size: 14px;
+    line-height: 20px;
+    color: #6D6E70;
+}
+
+.expCardList .expCard .expContentDiv .goldenBorderBtn {
+    margin-top: 30px;
+}
+
+.imgWithExpandContentList .imgWithWxpandContentCard {
+    background: #FFFBEC;
+    width: calc((100% / 2) - 8px);
+}
+
+.imgWithExpandContentList .imgWithWxpandContentCard .expandContentDiv {
+    padding: 20px;
+}
+
+.commercialFilterDiv {
+    background: #F6F6F6;
+    margin-top: -30px !important;
+    position: relative;
+    z-index: 9;
+}
+
+.commercialFilterDiv .dropDownDiv>span {
+    min-height: 60px;
+    padding: 20px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.commercialFilterDiv .dropDownDiv {
+    width: calc(100% / 3);
+    border-right: 1px solid rgba(157, 127, 25, 0.5);
+}
+
+.commercialFilterDiv .dropDownDiv:last-child {
+    border: 0;
+}
+
+.commercialFilterDiv .dropDownDiv span:before {
+    right: 20px;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(10%) saturate(4391%) hue-rotate(14deg) brightness(103%) contrast(80%);
+}
+
+.commercialFilterDiv .searchBtn {
+    width: 60px;
+    height: 60px;
+    background: #9D7F19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.commercialFilterDiv .searchBtn:hover {
+    background: #7d6410;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.commercialFilterDiv .searchBtn img {
+    width: 21px;
+    height: 21px;
+}
+
+.commercialFilterDiv .listDiv {
+    width: calc(100% - 60px);
+    gap: 0;
+}
+
+.commercialFilterDiv .dropDownDiv .dropList {
+    width: 100%;
+}

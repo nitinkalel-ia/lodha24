@@ -210,7 +210,7 @@ header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithS
 }
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li:first-child {
@@ -228,6 +228,10 @@ header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithS
     display: inline-flex;
     position: relative;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a[data-location=""] {
+    padding-bottom: 0;
 }
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a:before {
@@ -248,6 +252,10 @@ header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithS
     height: 1px;
     background: #C1A33E;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a[data-location=""]:after {
+    bottom: 0;
 }
 
 header .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerLinksUl ul li a.active,
@@ -407,10 +415,27 @@ header.white::before {
     background: #A0A0A0;
 }
 
-header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input::placeholder {
-    color: #000;
+header.white .finalResultDiv .tabWrapper .tabContent .swiper,
+header.white .serachAutofillDiv {
+    background: #f3f3f3;
 }
 
+header.white .finalResultDiv .tabWrapper .tabHeading li a,
+header.white .finalResultDiv p,
+header.white .finalResultDiv h6,
+header.white .finalResultDiv .tabWrapper .tabContent ul li h6,
+header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input::placeholder {
+    color: #000 !important;
+}
+
+header.white .finalResultDiv .tabWrapper .tabHeading li a:hover,
+header.white .finalResultDiv .tabWrapper .tabHeading li a.active {
+    color: #000 !important;
+    border-color: #000 !important;
+}
+
+header.white .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul.normalText li a:hover,
+header.white .mainHeader .linksDiv .staticlinksUl li a,
 header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv input,
 header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv h6,
 header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a,
@@ -424,6 +449,10 @@ header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksLis
     background: rgba(0, 0, 0, 0.6);
 }
 
+header.white .finalResultDiv .tabWrapper .tabHeading li a,
+header.white .finalResultDiv .tabWrapper .tabContent ul li,
+header.white .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .searchDiv,
+header.white .serachAutofillDiv ul li,
 header.white .mainHeader .linksDiv>ul>li .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
     border-color: rgba(0, 0, 0, 0.4);
 }

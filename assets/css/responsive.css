@@ -325,8 +325,8 @@
     }
 
     .nav-up .stickyHeader {
-        transition: all 1s cubic-bezier(.215, .61, .355, 1);
-        bottom: -65px;
+        /* transition: all 1s cubic-bezier(.215, .61, .355, 1);
+        bottom: -65px; */
     }
 
     .stickyHeader ul {
@@ -428,6 +428,10 @@
 
     header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul li a {
         padding: 5px 20px;
+    }
+
+    header .mainHeader .linksDiv>ul>li.searchLi .innerMenuDiv .innerLinksList .linksListWithSearch .innerSearchDiv .recentlyDiv ul.normalText {
+        gap: 16px;
     }
 
     .serachAutofillDiv ul {
@@ -540,8 +544,12 @@
         font-size: 12px;
     }
 
+    .projectDetailsPage footer {
+        padding-bottom: 70px;
+    }
+
     .ourPromiseSec {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
     .ourPromiseSec .row {
@@ -555,6 +563,7 @@
 
     .ourPromiseSec .ourPromiseTextDiv {
         padding-left: 0;
+        padding-right: 0;
         margin-top: 30px;
     }
 
@@ -616,7 +625,7 @@
     .ourPrideSliderDiv .container {
         flex-wrap: wrap;
         justify-content: center !important;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .ourPrideSliderDiv .container .swiperBtnDiv {
@@ -689,6 +698,7 @@
         width: 150px !important;
         justify-content: flex-end;
         text-align: right;
+        font-size: 40px;
     }
 
     .keyFactsSec p {
@@ -830,14 +840,60 @@
     .projectFilterDiv .listDiv {
         flex-wrap: wrap;
         display: none;
+        gap: 0;
+    }
+
+    .cardDiv h6 {
+        font-size: 16px;
+        line-height: 18px;
     }
 
     .filterSliderDiv {
-        margin: 0 -20px;
-        width: calc(100% + 40px);
+        /* margin: 0 -20px;
+        width: calc(100% + 40px); */
     }
 
+
+
     .filterSliderDiv .swiper-slide {
+        width: calc((100% / 2) - 9px);
+        margin: 8px;
+    }
+
+    .hoverCard,
+    .hoverCard .front,
+    .hoverCard .back,
+    .hoverCard img {
+        height: 225px;
+    }
+
+
+
+    .filterSliderDiv .swiper-slide:nth-child(4n + 4),
+    .filterSliderDiv .swiper-slide:nth-child(5n + 5) {
+        margin: 8px;
+    }
+
+    .filterSliderDiv .swiper-slide:nth-child(2n + 2) {
+        margin-right: 1px;
+    }
+
+    .filterSliderDiv .swiper-slide:first-child,
+    .filterSliderDiv .swiper-slide:nth-child(2n + 1) {
+        margin-left: 1px;
+    }
+
+    .hoverDiv ul li {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+
+    .hoverDiv a {
+        padding: 16px 10px;
+    }
+
+    /* .filterSliderDiv .swiper-slide {
         padding: 0 12px;
     }
 
@@ -847,7 +903,7 @@
 
     .filterSliderDiv .swiper-slide:last-child {
         margin-right: 8px;
-    }
+    } */
 
     .filterSliderDiv .filterDataRow {
         margin-top: 25px;
@@ -861,6 +917,141 @@
         transform: none !important;
     }
 
+    .projectFilterDiv .mobFilter {
+        background: url(../media/svg/filter.svg) center left no-repeat;
+        padding-left: 25px;
+    }
+
+    .projectFilterDiv .mobFilter span {
+        font-family: 'Futura Bk BT';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        color: #6D6E70;
+        position: relative;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .projectFilterDiv .mobFilter span:after {
+        content: "";
+        background: url(../media/svg/arrowDown.svg) center right no-repeat;
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        right: 0;
+    }
+
+    .projectFilterDiv .filterListDiv {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        min-height: 300px;
+        left: 0;
+        flex-wrap: wrap;
+        bottom: -10vh;
+        margin: 0;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        z-index: -1 !important;
+        /* transition: all 0.15s cubic-bezier(0.075, 0.82, 0.165, 1); */
+    }
+
+    .projectFilterDiv .filterListDiv:before {
+        content: "";
+        background: #f8f8f8;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 150px;
+        height: calc(100% - 70px);
+    }
+
+    .mobFilterOpen .projectFilterDiv .filterListDiv {
+        bottom: 0;
+        opacity: 1 !important;
+        visibility: visible !important;
+        z-index: 99 !important;
+        box-shadow: 0px 4px 0 100vh rgba(0, 0, 0, 0.8);
+        transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        padding-bottom: 70px;
+    }
+
+    .projectFilterDiv .filterListDiv:after {
+        /* content: ""; */
+        width: 100%;
+        height: calc(100vh);
+        position: fixed;
+        top: calc(430px - 100vh);
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    .projectFilterDiv .filterListDiv .closedFilter {
+        position: absolute;
+        background: url(../media/svg/close.svg) center center no-repeat;
+        width: 50px;
+        height: 50px;
+        top: -50px;
+        right: 0;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv {
+        width: 100%;
+        background: #fff;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv span {
+        background: #F8F8F8;
+        padding: 20px;
+        min-width: 150px;
+        max-width: 150px;
+        width: auto;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv.active span {
+        background: #fff;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv label {
+        border: 0;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv .dropList:before,
+    .projectFilterDiv .listDiv .dropDownDiv span:before {
+        display: none;
+    }
+
+    .projectFilterDiv .clearBtnDiv {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv .dropList {
+        position: fixed;
+        left: 150px;
+        width: calc(100% - 150px);
+        top: 0;
+        margin: 0;
+        height: calc(100% - 70px);
+        filter: none;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv .dropList .swiper {
+        max-height: 100%;
+    }
+
+    .projectFilterDiv .listDiv .dropDownDiv .dropList .searchListInput {
+        width: 100%;
+    }
 
 
     .secodaryNav .container {
@@ -887,6 +1078,15 @@
 
     .normalTextImgSlider.noSliderMob .swiper-slide {
         margin: 0 0 32px 0 !important;
+    }
+
+    .noSliderMob {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .normalTextImgSlider.noSliderMob .swiper-slide:first-child {
+        margin-left: 0 !important;
     }
 
     .planSec {
@@ -1082,9 +1282,7 @@
         width: calc((100% / 2) - 8px);
     }
 
-    .bodredCardGridDiv .bodredCardDiv {
-        padding: 20px 10px;
-    }
+
 
     .blogCard .blogContentDiv .date {
         font-size: 10px;
@@ -1144,7 +1342,7 @@
 
     .enquirePopupWrapper .getInTouchForm {
         max-width: 100%;
-        padding: 50px 25px;
+        padding: 40px 25px;
         min-width: 335px;
     }
 
@@ -1161,11 +1359,338 @@
         left: 15px;
     }
 
-    /* suraj */
+    .ourPrideSec {
+        padding: 50px 0 0 0;
+    }
+
     .ourPrideSec .ourPrideSliderDiv .swiper-wrapper {
         padding-bottom: 0;
     }
 
-    /* suraj */
+    .ourPrideSliderDiv {
+        padding-bottom: 50px;
+    }
 
+    .ourBrandsSec {
+        padding: 50px 0 !important;
+    }
+
+    .sec404 .content404 {
+        margin-top: -50px;
+    }
+
+    .categoryDiv .swiper-slide:first-child {
+        margin-left: 20px !important;
+    }
+
+    .categoryDiv .swiper-slide:last-child {
+        margin-right: 20px !important;
+    }
+
+    .investorKeyFacts .investorTextImgDiv p,
+    .investorKeyFacts .investorTextImgDiv,
+    .investorKeyFacts .projectsDiv {
+        width: 100% !important;
+    }
+
+    .investorKeyFacts .projectsDiv,
+    .investorKeyFacts .keyContentDiv {
+        margin-top: 0;
+    }
+
+    .investorKeyFacts .projectsDiv ul li span {
+        width: 200px !important;
+    }
+
+    .investorKeyFacts .investorTextImgDiv img {
+        width: 240px;
+        margin-top: 40px;
+    }
+
+    .presentationSec .textDiv {
+        padding: 55px 24px;
+        justify-content: flex-start !important;
+    }
+
+    .presentationSec .countDiv {
+        padding: 30px 25px;
+    }
+
+    .presentationSec .countDiv h6 {
+        font-size: 20px;
+    }
+
+    .presentationSec .countDiv h2 {
+        font-size: 35px;
+    }
+
+    .contactList li h6 {
+        min-width: 40%;
+    }
+
+    .contactList li a {
+        min-width: 60%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .contactList li .contactLinkList {
+        text-align: right;
+    }
+
+    .investorKeyFacts .projectsDiv ul li p {
+        width: 100px !important;
+    }
+
+    .viewList li {
+        min-height: 50px;
+    }
+
+    .viewList li p {
+        width: calc(100% - 100px);
+    }
+
+    .viewList li audio {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .directorList li span {
+        width: 100%;
+    }
+
+    .directorList li {
+        padding: 16px 0;
+    }
+
+    .yearDropDiv h6 {
+        font-size: 16px;
+    }
+
+    .yearDropDiv .dropDownDiv {
+        min-width: 90px;
+    }
+
+
+    .normalTextImgSlider {
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+
+    .bodredCardGridDiv .swiper-wrapper {
+        justify-content: flex-start !important;
+    }
+
+
+    .normalTextImgSlider .swiper-slide:first-child {
+        margin-left: 20px !important;
+    }
+
+
+    .normalTextImgSlider .swiper-slide:last-child {
+        margin-right: 20px !important;
+    }
+
+
+    .normalTextImgSlider .swiper-slide {
+        width: calc((80% / 1) - 16px);
+    }
+
+    .normalTextImgSlider .swiper-slide {
+        text-align: center;
+    }
+
+    .normalTextImgSlider .swiper-slide p {
+        max-width: 100%;
+        /* text-align: center; */
+    }
+
+    .bodDiv.normalTextImgSlider {
+        padding: 0 20px;
+    }
+
+    .bodDiv.normalTextImgSlider .swiper-slide:last-child,
+    .bodDiv.normalTextImgSlider .swiper-slide:first-child {
+        margin: 0 !important;
+    }
+
+    .bodSec {
+        padding-bottom: 0;
+    }
+
+    .cardSliderDesk .swiper-wrapper {
+        gap: 0;
+    }
+
+    .cardSliderDesk .swiper-wrapper .swiper-slide {
+        width: calc((80% / 1) - 16px);
+        margin: 0 8px !important;
+    }
+
+    .cardSliderDesk .swiper-wrapper .swiper-slide:first-child {
+        margin-left: 20px !important;
+    }
+
+    .cardSliderDesk .swiper-wrapper .swiper-slide:last-child {
+        margin-right: 20px !important;
+    }
+
+    .cardSliderDesk .swiper-wrapper .swiper-slide p {
+        text-align: left;
+    }
+
+    .commercialWFDSlider {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .commercialWFDSlider .swiper-slide:first-child {
+        margin-left: 0px !important;
+    }
+
+    .commercialWFDSlider .swiper-slide:last-child {
+        margin-right: 0px !important;
+    }
+
+    .listingDiv .listingImgTextDiv .listingImgDiv {
+        width: 100px;
+    }
+
+    .listingDiv .listingImgTextDiv {
+        padding: 12px 0;
+    }
+
+    .listingDiv .listingImgTextDiv .listingTextDiv h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+    .listingDiv .listingImgTextDiv .listingTextDiv span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .listingDiv .listingImgTextDiv .listingTextDiv {
+        width: calc(100% - 100px);
+        padding: 0px 0 0 15px;
+    }
+
+    .listNewsDiv .listNewsFilterDiv .dropDownDiv {
+        margin-left: 0;
+    }
+
+    .listNewsDiv .listNewsFilterDiv {
+        margin-top: 0;
+    }
+
+    .listNewsDiv .listNewsFilterDiv>div {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .listNewsDiv .filterListDiv {
+        align-items: flex-start !important;
+    }
+
+    .newsPressDiv .newsDiv {
+        width: 100%;
+    }
+
+    .newsPressDiv {
+        gap: 40px 0;
+    }
+
+    .listNewsDiv .projectFilterDiv {
+        margin: 0;
+    }
+
+    .siteMapContentDiv>div>div {
+        width: calc(100% / 1);
+    }
+
+    .mobWidth-50 .swiper-slide:first-child,
+    .mobWidth-50 .swiper-slide:last-child {
+        margin: 0 !important;
+    }
+
+    .logoSliderDiv {
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+
+    .logoSliderDiv .swiper-slide {
+        padding-left: 30px;
+    }
+
+    .expCardList .expCard,
+    .imgWithExpandContentList .imgWithWxpandContentCard,
+    .careerExpSec .projectSearchDiv {
+        width: 100%;
+    }
+
+    .peopleSec .ourPromiseSec .container {
+        padding: 0 20px;
+    }
+
+    .peopleSec .ourPromiseSec .ourPromiseTextDiv {
+        padding: 0;
+    }
+
+    .imgLeftTextSliderDiv {
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+
+    .imgLeftTextSliderDiv .swiper-slide {
+        padding: 0 20px;
+    }
+
+    .commercialFilterDiv {
+        background: transparent;
+        margin-top: 30px !important;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .iconTextList ul {
+        gap: 20px;
+    }
+
+    .iconTextList ul li {
+        width: calc((100% / 2) - 11px);
+    }
+
+    .headingPraCardDiv .headingPraCard {
+        width: 100%;
+    }
+
+    .bodredCardGridDiv .bodredCardDiv {
+        padding: 0 10px !important;
+        width: auto !important;
+    }
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .ourPurposeSec .ourPurposeImgDiv .imgDiv,
+    .ourPromiseSec .ourPromiseImgDiv,
+    .ourPromiseSec .ourPromiseTextDiv {
+        width: 50%;
+    }
+
+    .ourPromiseSec .ourPromiseTextDiv {
+        margin-top: 0;
+        padding-right: 0;
+        padding-left: 30px;
+    }
+
+    .ourPurposeSec .ourPurposeImgDiv {
+        gap: 0;
+        padding: 30px 0;
+    }
 }
