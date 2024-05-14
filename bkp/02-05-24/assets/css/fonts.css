@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('FuturaBT-Medium.eot');
+    src: url('../fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Medium.woff') format('woff'),
+        url('../fonts/FuturaBT-Medium.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('../fonts/FuturaBT-Heavy.eot');
+    src: url('../fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('../fonts/FuturaBT-Heavy.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Heavy.svg#FuturaBT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('../fonts/FuturaBT-Light.eot');
+    src: url('../fonts/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Light.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Light.woff') format('woff'),
+        url('../fonts/FuturaBT-Light.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Light.svg#FuturaBT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('../fonts/FuturaBT-Book.eot');
+    src: url('../fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Book.woff') format('woff'),
+        url('../fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Medium_1.eot');
+    src: url('../fonts/FuturaBT-Medium_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Medium_1.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Medium_1.woff') format('woff'),
+        url('../fonts/FuturaBT-Medium_1.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Medium_1.svg#FuturaBT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Semibold';
+    src: url('../fonts/CormorantGaramond-SemiBold.eot');
+    src: url('../fonts/CormorantGaramond-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-SemiBold.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-SemiBold.woff') format('woff'),
+        url('../fonts/CormorantGaramond-SemiBold.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-SemiBold.svg#CormorantGaramond-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Regular';
+    src: url('../fonts/CormorantGaramond-Regular.eot');
+    src: url('../fonts/CormorantGaramond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Regular.woff') format('woff'),
+        url('../fonts/CormorantGaramond-Regular.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-Regular.svg#CormorantGaramond-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Bold';
+    src: url('../fonts/CormorantGaramond-Bold.eot');
+    src: url('../fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Bold.woff') format('woff'),
+        url('../fonts/CormorantGaramond-Bold.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-Bold.svg#CormorantGaramond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond SemiBoldItalic';
+    src: url('../fonts/CormorantGaramond-SemiBoldItalic.eot');
+    src: url('../fonts/CormorantGaramond-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-SemiBoldItalic.svg#CormorantGaramond-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Italic';
+    src: url('../fonts/CormorantGaramond-Italic.eot');
+    src: url('../fonts/CormorantGaramond-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-Italic.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Italic.woff') format('woff'),
+        url('../fonts/CormorantGaramond-Italic.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-Italic.svg#CormorantGaramond-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond LightItalic';
+    src: url('../fonts/CormorantGaramond-LightItalic.eot');
+    src: url('../fonts/CormorantGaramond-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-LightItalic.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-LightItalic.woff') format('woff'),
+        url('../fonts/CormorantGaramond-LightItalic.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-LightItalic.svg#CormorantGaramond-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Medium';
+    src: url('../fonts/CormorantGaramond-Medium.eot');
+    src: url('../fonts/CormorantGaramond-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-Medium.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Medium.woff') format('woff'),
+        url('../fonts/CormorantGaramond-Medium.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-Medium.svg#CormorantGaramond-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond BoldItalic';
+    src: url('../fonts/CormorantGaramond-BoldItalic.eot');
+    src: url('../fonts/CormorantGaramond-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-BoldItalic.woff') format('woff'),
+        url('../fonts/CormorantGaramond-BoldItalic.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-BoldItalic.svg#CormorantGaramond-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond MediumItalic';
+    src: url('../fonts/CormorantGaramond-MediumItalic.eot');
+    src: url('../fonts/CormorantGaramond-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-MediumItalic.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-MediumItalic.woff') format('woff'),
+        url('../fonts/CormorantGaramond-MediumItalic.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-MediumItalic.svg#CormorantGaramond-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Light';
+    src: url('../fonts/CormorantGaramond-Light.eot');
+    src: url('../fonts/CormorantGaramond-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantGaramond-Light.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Light.woff') format('woff'),
+        url('../fonts/CormorantGaramond-Light.ttf') format('truetype'),
+        url('../fonts/CormorantGaramond-Light.svg#CormorantGaramond-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

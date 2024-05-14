@@ -1,0 +1,26 @@
+.swiper-slide .bannerImgDiv .bannerImg {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.swiper-slide .bannerImgDiv .bannerImg.aos-animate {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    transition-delay: 1s !important;
+}
+
+.imgAnimation,
+.ourPurposeSec .ourPurposeImgDiv .imgDiv img,
+.ourPromiseSec .ourPromiseImgDiv img {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+
+}
+
+.imgAnimation.aos-animate,
+.ourPurposeSec .ourPurposeImgDiv .imgDiv img.aos-animate,
+.ourPromiseSec .ourPromiseImgDiv img.aos-animate {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    /* transition-delay: 0.5s !important; */
+}
